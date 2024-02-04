@@ -9,7 +9,7 @@ extract($_POST); extract($_GET);
 
 include_once("../config/connect.php"); include_once("../config/config.php");
 //mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ошибка подключения к MySQL"); mysql_select_db(DB_NAME) or die("Ошибка подключения к БД");
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'utf8'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
 include_once("../include/checkadmin.php");
 
 if (isset($visible)){
@@ -60,7 +60,7 @@ while($Row=mysql_fetch_assoc($r)) {
 $out .="</table>";
 $out .= "<br><center><a href = anews.php?New=1&Nedit=1>Добавить новость</a></center>";
 
-$out = mb_convert_encoding($out, "utf-8", "windows-1251");
+//$out = mb_convert_encoding($out, "utf-8", "windows-1251");
 
 
 ?>

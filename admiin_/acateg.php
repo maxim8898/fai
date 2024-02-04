@@ -9,7 +9,7 @@ extract($_POST); extract($_GET);
 
 include_once("../config/connect.php"); include_once("../config/config.php");
 //mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ошибка подключения к MySQL"); mysql_select_db(DB_NAME) or die("Ошибка подключения к БД");
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'utf8'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
 include_once("../include/checkadmin.php");
 
 
@@ -111,7 +111,7 @@ if ($count>0){
   $out1="В данной категории материалов нет.";
 }
 $out1 .= "<br><center><a href = acateg.php?New=1&Pedit=1&CID=$CID>Добавить материал</a></center>";
-$out1 = mb_convert_encoding($out1, "utf-8", "windows-1251");
+//$out1 = mb_convert_encoding($out1, "utf-8", "windows-1251");
 
 
 ?>

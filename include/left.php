@@ -11,7 +11,9 @@ if (isset($logout)){ //завершение сеанса
 	$row = mysql_fetch_array($q);
 	if (($row) && $row[pass] == MD5($user_pw)){ // проверка пользователя по БД
 		$login = $user_login; $pass = $row[pass]; $nick = $row[nick];
-		session_register("login", "pass", "nick");
+		$_SESSION['login'] = $user_login;
+		$_SESSION['pass'] = $row[pass];
+		$_SESSION['nick'] = $row[nick];
 		if (isset($save)){SetCookie("login", $login, time()+33600); SetCookie("pass", $pass, time()+33600);}
 
 		// обновление данных пользователя

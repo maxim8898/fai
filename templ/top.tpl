@@ -1,6 +1,6 @@
 <TABLE width="100%" border="0" background="img/top_.jpg" cellpadding="0" cellspacing="0">
  <TR>
-  <TD width=100%><IMG src="img/top0.jpg" height="100" align="left" alt="FAI F3A. Ñàéò áåëîðóññêèõ ïèëîòàæíèêîâ."></TD>
+  <TD width=100%><IMG src="img/top0.jpg" height="100" align="left" alt="FAI F3A. Ð¡Ð°Ð¹Ñ‚ Ð±ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¸Ñ… Ð¿Ð¸Ð»Ð¾Ñ‚Ð°Ð¶Ð½Ð¸ÐºÐ¾Ð²."></TD>
   <TD align="right">{SEARCH}</TD>
  </TR>
 </TABLE>

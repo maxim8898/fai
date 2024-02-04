@@ -33,6 +33,6 @@ aa+="&ancol="+aacol + "&anwt="+aaw + "&anh="+aah + "&anlt="+aalt + "&arn="+arn +
 
 </td>
 <td>
-      <DIV align="center"><font color=black size=-1>&copy; 2009-2010, f3a-by.com <A href="mailto:admin@f3a-by.com?Subject=Обращение с сайта http://f3a-by.com">Написать администратору</A></font></DIV>
+      <DIV align="center"><font color=black size=-1>&copy; 2009-2010, f3a-by.com <A href="mailto:admin@f3a-by.com?Subject=РћР±СЂР°С‰РµРЅРёРµ СЃ СЃР°Р№С‚Р° http://f3a-by.com">РќР°РїРёСЃР°С‚СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСѓ</A></font></DIV>
       </td>
 </TABLE>

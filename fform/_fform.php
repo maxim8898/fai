@@ -88,6 +88,11 @@ function loginform_show($obj) {
       $buf="";
       $fs=filesize($obj);
       $buf1=fread($f,$fs);
+      $buf1 = preg_replace_callback('!s:\d+:"(.*?)";!s',
+        function($m) {
+           return "s:" . strlen($m[1]) . ':"'.$m[1].'";';
+        }, $buf1
+      );
       $buf=unserialize($buf1);
       if (!is_array($buf)) {
          echo "\n\n\n\n\n<textarea rows=10 cols=70>".htmlspecialchars($buf1)."</textarea>\n\n\n\n\n\n";

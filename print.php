@@ -22,7 +22,7 @@ extract($_POST); extract($_GET);
 include_once("config/connect.php"); include_once("config/config.php");
 include_once("include/function.php");
 //mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ошибка подключения к MySQL"); mysql_select_db(DB_NAME) or die("Ошибка подключения к БД");
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'utf8'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
 
 include_once("include/level.php");
 $output = implode("",file("templ/print.html"));
