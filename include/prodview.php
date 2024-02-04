@@ -14,12 +14,12 @@ $parent = $CID;
 //Unset($CID);
 while($parent<>0) {
   $r=mysql_query("SELECT parent, name, CID, tip, discussion, showrating FROM ok_categories WHERE CID='$parent' and visible = 1");
-  $RowC=mysql_fetch_array($r); $parent = $RowC[parent]; 
+  $RowC=mysql_fetch_array($r); $parent = $RowC[parent];
   if ($RowC[CID] == $CID){$tip = $RowC[tip]; $discussion =$RowC[discussion]; $showrating=$RowC[showrating];}
   $nav[] = "<a href=index.php?CID=$RowC[CID]>".$RowC[name]."</a>";
 }
 
-$nav[] ="<a href=index.php?CID=0>Главная</a>";
+$nav[] ="<a href=index.php?CID=0>Р“Р»Р°РІРЅР°СЏ</a>";
 $out1 .="<b>";
 for($j=count($nav); $j>=0;$j--){
   if($j==0 || $j==count($nav)){
@@ -53,44 +53,44 @@ $out .="
   <TD valign='top' align='left' valign='top' width='100%'>
 	<center><h1>$Row[name] $Row[model]</h1></center>";
 	if ($showrating){
-	  $out .="Рейтинг ";
+	  $out .="Р РµР№С‚РёРЅРі ";
 	  if ($Row[rating] > 0 ){
 		$out .= "&nbsp;&nbsp;";
 		for ($i=0; $i<round($Row[rating]); $i++) $out .= "<img src='img/star_r.gif'>";
 		for (    ; $i < 5; $i++) $out .= "<img src='img/star_b.gif'>";
 	  }
-	  $out .=" ($Row[votes] голосов)<br>";	
+	  $out .=" ($Row[votes] РіРѕР»РѕСЃРѕРІ)<br>";
 	}
 	if ($discussion ==1){
-	   $out .= "<a href=index.php?PID=$PID&DID=$PID>Комментарии </a>($cnt мнений)<br>";
-	   $out .="Просмотров: $Row[counter]";
+	   $out .= "<a href=index.php?PID=$PID&DID=$PID>РљРѕРјРјРµРЅС‚Р°СЂРёРё </a>($cnt РјРЅРµРЅРёР№)<br>";
+	   $out .="РџСЂРѕСЃРјРѕС‚СЂРѕРІ: $Row[counter]";
          }
 
 	if ($tip == 2 && $Row[price]<>0){
-	  $out .= "<br><b>Наша цена: <font color=red>$Row[price] руб.</font></b>";
+	  $out .= "<br><b>РќР°С€Р° С†РµРЅР°: <font color=red>$Row[price] СЂСѓР±.</font></b>";
 	}
 //  $Row[description] = htmlspecialchars($Row[description]);
-  if ($Row[description]<> ""){	
+  if ($Row[description]<> ""){
 	$out .="<hr>$Row[description]"; $descriptions .= "$Row[description]. ";
   }
   $out .= "</TD>
   <TD valign='top'>";
 //  if ($tip == 2) $out .="<img src= img/cart.gif><br>";
-  if ($showrating){  // таблица голосования
+  if ($showrating){  // С‚Р°Р±Р»РёС†Р° РіРѕР»РѕСЃРѕРІР°РЅРёСЏ
 	$out .= "
 	<center>
 	<form action='index.php' method=get>
 	<table border=0 cellspacing=1 cellpadding=2 bgcolor=#$middle_color>
-	<tr><td align=center>Ваша оценка</td></tr>
+	<tr><td align=center>Р’Р°С€Р° РѕС†РµРЅРєР°</td></tr>
 	<tr bgcolor=white><td>
-	<input type='radio' name='mark' value='5' checked> Отлично<br>
-	<input type='radio' name='mark' value='3.8'> Хорошо<br>
-	<input type='radio' name='mark' value='2.5'> Средне<br>
-	<input type='radio' name='mark' value='0.5'> Плохо
+	<input type='radio' name='mark' value='5' checked> РћС‚Р»РёС‡РЅРѕ<br>
+	<input type='radio' name='mark' value='3.8'> РҐРѕСЂРѕС€Рѕ<br>
+	<input type='radio' name='mark' value='2.5'> РЎСЂРµРґРЅРµ<br>
+	<input type='radio' name='mark' value='0.5'> РџР»РѕС…Рѕ
 	</td></tr>
 	</table>
 	<input type='hidden' name='PID' value='$PID'>
-	<input type='submit' value='Оценить!'"; if (isset($vote_completed[$PID])) $out .=" disabled"; $out .=">
+	<input type='submit' value='РћС†РµРЅРёС‚СЊ!'"; if (isset($vote_completed[$PID])) $out .=" disabled"; $out .=">
 	</form>
 	</center>
 	";
@@ -123,7 +123,7 @@ if ($Row[info]<>""){
 
 
 if ($discussion){
- // $out .= "</TABLE>"; // ok 
+ // $out .= "</TABLE>"; // ok
   $topic = "$Row[name] $Row[model]";
   $C = $CID; $var='PID'; include_once("disnew.php");
 }

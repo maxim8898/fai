@@ -3,35 +3,35 @@ include("../include/check.php");
 if (isset($Cancel)){
   exit(header("Location: aforum.php?C=$form[parent]"));
 }
-if (!isset($form)){  // Ïåðâîíà÷àëüíûå äàííûå
+if (!isset($form)){  // ÐŸÐµÑ€Ð²Ð¾Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ
 	$res=mysql_query("SELECT * FROM ok_categories WHERE CID='$CID'");
-	$form=mysql_fetch_assoc($res); 
+	$form=mysql_fetch_assoc($res);
 }else{
-  if (rtrim($form[name])=="") $error[name][]='ïîëå íå çàïîëíåío';
+  if (rtrim($form[name])=="") $error[name][]='Ð¿Ð¾Ð»Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½o';
 }
 
 
-// ìàññèâ äëÿ ïîëÿ select
-$lf_value[]=0; $lf_textval[]="Êîðåíü"; $lf_default = 0;
+// Ð¼Ð°ÑÑÐ¸Ð² Ð´Ð»Ñ Ð¿Ð¾Ð»Ñ select
+$lf_value[]=0; $lf_textval[]="ÐšÐ¾Ñ€ÐµÐ½ÑŒ"; $lf_default = 0;
 
 define("loginform",1); include_once("_fform.php");
-$buf=loginform_show("../fform/_forum.lf"); //ÂÍÈÌÀÍÈÅ: ÒÓÒ ÍÓÆÍÎ ÓÊÀÇÀÒÜ ÈÌß ÔÎÐÌÛ
+$buf=loginform_show("../fform/_forum.lf"); //Ð’ÐÐ˜ÐœÐÐÐ˜Ð•: Ð¢Ð£Ð¢ ÐÐ£Ð–ÐÐž Ð£ÐšÐÐ—ÐÐ¢Ð¬ Ð˜ÐœÐ¯ Ð¤ÐžÐ ÐœÐ«
 
 if (isset($onSubmit) && !isset($error)){
   if (isset($New)){
-echo "Äîáàâëåíèå CID=$form[CID]";
+echo "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ CID=$form[CID]";
   }else{
 	$form[description] = str_replace("\"", "\\\"", $form[description]); $form[description] = str_replace("'", "\'", $form[description]);
 	$query ="UPDATE ok_categories
 	SET 	tip=3,
-		name='$form[name]', 
-		parent=0, 
-		description='$form[description]', 
-		discussion='$form[discussion]', 
+		name='$form[name]',
+		parent=0,
+		description='$form[description]',
+		discussion='$form[discussion]',
 		visible='$form[visible]'
 	WHERE CID='$form[CID]'";
-  }	
-	$result = MYSQL_QUERY($query); 
+  }
+	$result = MYSQL_QUERY($query);
 header("Location: aforum.php?C=$form[parent]");
 }
 ?>

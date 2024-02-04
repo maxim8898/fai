@@ -1,6 +1,6 @@
 <?
 error_reporting(0);
-// Управление главной панелью
+// РЈРїСЂР°РІР»РµРЅРёРµ РіР»Р°РІРЅРѕР№ РїР°РЅРµР»СЊСЋ
 session_start();
 
 extract($_POST); extract($_GET);
@@ -18,12 +18,12 @@ $searchstring =  trim(substr($searchstring, 0, 20));
 //$searchstring = mysql_real_escape_string($searchstring);
 //echo"CID=$CID PID=$PID FID=$FID DID=$DID login=$login act=$act level=$level";
 
-include_once("config/connect.php"); include_once("config/config.php"); 
-include_once("include/function.php"); 
-//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ошибка подключения к MySQL"); mysql_select_db(DB_NAME) or die("Ошибка подключения к БД");	
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
+include_once("config/connect.php"); include_once("config/config.php");
+include_once("include/function.php");
+//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє MySQL"); mysql_select_db(DB_NAME) or die("РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р‘Р”");
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("РЎРµСЂРІРёСЃ РІСЂРµРјРµРЅРЅРѕ РЅРµРґРѕСЃС‚СѓРїРµРЅ"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("РЎРµСЂРІРёСЃ РІСЂРµРјРµРЅРЅРѕ РЅРµРґРѕСЃС‚СѓРїРµРЅ");
 //include_once("include/level.php");
-$output = implode("",file("templ/index.html")); 
+$output = implode("",file("templ/index.html"));
 $outtmp = implode("",file("templ/top.tpl"));$output = str_replace("{TOP}", $outtmp, $output);
 $outtmp = implode("",file("templ/menu.tpl"));$output = str_replace("{MENU}", $outtmp, $output);
 $outtmp = implode("",file("templ/center.tpl"));$output = str_replace("{CENTER}", $outtmp, $output);
@@ -32,7 +32,7 @@ $outtmp = implode("",file("templ/left.tpl"));$output = str_replace("{LEFT}", $ou
 $outtmp = implode("",file("templ/main.tpl"));$output = str_replace("{MAIN}", $outtmp, $output);
 $outtmp = implode("",file("templ/right.tpl"));$output = str_replace("{RIGHT}", $outtmp, $output);
 
-$out = ""; $out1 = "Информация";
+$out = ""; $out1 = "РРЅС„РѕСЂРјР°С†РёСЏ";
 
 include_once("include/main.php");
 include_once("include/left.php");
@@ -89,7 +89,7 @@ $keywords = str_replace(">", "", $keywords);
 
 
 
-$sitename ="FAI F3A в Беларуси. Сайт белорусских пилотажников";	# Название сайта
+$sitename ="FAI F3A РІ Р‘РµР»Р°СЂСѓСЃРё. РЎР°Р№С‚ Р±РµР»РѕСЂСѓСЃСЃРєРёС… РїРёР»РѕС‚Р°Р¶РЅРёРєРѕРІ";	# РќР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°
 $title = $sitename;
 $descriptions = $sitename;
 $keywords = $sitename;

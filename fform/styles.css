@@ -1,129 +1,147 @@
 /* Ok */
 .ok {
-font: 90% Tahoma;
+	font: 90% Tahoma;
 }
 
-.cat
-{ font-size:16px;
-}
-P{
-  Font-Size: 14px;
-  padding-left : 5px;
-  padding-right : 5px;
-  text-indent:20pt;
-  margin-top:0.0pt;
-  margin-bottom:5.0pt;
-  LETTER-SPACING: 1px;
-  text-align : justify;
+.cat {
+	font-size: 16px;
 }
 
-A      {
-  font: 12px Tahoma;
+P {
+	Font-Size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-indent: 20pt;
+	margin-top: 0.0pt;
+	margin-bottom: 5.0pt;
+	LETTER-SPACING: 1px;
+	text-align: justify;
+}
+
+A {
+	font: 12px Tahoma;
 }
 
 A:link {
-	Color:#000000;
+	Color: #000000;
 }
+
 A:visited {
-	Color:#000000; 
+	Color: #000000;
 }
+
 A:hover {
-	Color:#000000; 
+	Color: #000000;
 }
+
 A:active {
-	Color: #000000; 
+	Color: #000000;
 }
+
 table {
-	Font-Size: 14px; 
+	Font-Size: 14px;
 	Color: #000000;
 	Text-Align: Left;
 }
 
-.main { 
-	Font-Family: Times; 
-	Font-Size: 14px; 
-	Color: #000000; 
-	Font-Weight: Bold; 
-}
-body {
-	Font-Family: Times; 
-	Font-Size: 14px; 
+.main {
+	Font-Family: Times;
+	Font-Size: 14px;
 	Color: #000000;
-	Margin: 0; 
+	Font-Weight: Bold;
+}
+
+body {
+	Font-Family: Times;
+	Font-Size: 14px;
+	Color: #000000;
+	Margin: 0;
 	Padding-Left: 3px;
 }
-h1   {
-	Font-Family: Times; 
-	Font-Size: 16px; 
+
+h1 {
+	Font-Family: Times;
+	Font-Size: 16px;
 }
-h2   {
-	Font-Family: Times; 
-	Font-Size: 15px; 
+
+h2 {
+	Font-Family: Times;
+	Font-Size: 15px;
 }
-h3   {
-	Font-Family: Times; 
-	Font-Size: 14px; 
+
+h3 {
+	Font-Family: Times;
+	Font-Size: 14px;
 }
 
 
-/* «¿√ŒÀŒ  “¿¡À»÷€ 1 */
+/* –ó–ê–ì–û–õ–û–ö –¢–ê–ë–õ–ò–¶–´ 1 */
 .lf_table {
-BORDER-RIGHT:  #eeeeee 2px outset;
-BORDER-TOP:    #eeeeee 2px outset;
-BORDER-LEFT:   #eeeeee 2px outset;
-BORDER-BOTTOM: #eeeeee 2px outset;
-BACKGROUND-COLOR: #D4D0C8;
+	BORDER-RIGHT: #eeeeee 2px outset;
+	BORDER-TOP: #eeeeee 2px outset;
+	BORDER-LEFT: #eeeeee 2px outset;
+	BORDER-BOTTOM: #eeeeee 2px outset;
+	BACKGROUND-COLOR: #D4D0C8;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ 1 */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ 1 */
 .lf_tr {
-BORDER-RIGHT:  #aaaaaa 1px solid;
-BORDER-TOP:    #eeeeee 1px solid;
-BORDER-LEFT:   #eeeeee 1px solid;
-BORDER-BOTTOM: #aaaaaa 1px solid;
-font: 90% Tahoma;
+	BORDER-RIGHT: #aaaaaa 1px solid;
+	BORDER-TOP: #eeeeee 1px solid;
+	BORDER-LEFT: #eeeeee 1px solid;
+	BORDER-BOTTOM: #aaaaaa 1px solid;
+	font: 90% Tahoma;
 }
-/* ﬂ◊≈… ¿ “¿¡À»÷€ 2 */
+
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ 2 */
 .lf_tt {
-BORDER-TOP:    #eeeeee 1px solid;
-BORDER-BOTTOM: #aaaaaa 1px solid;
-font: 90% Tahoma;
+	BORDER-TOP: #eeeeee 1px solid;
+	BORDER-BOTTOM: #aaaaaa 1px solid;
+	font: 90% Tahoma;
 }
 
-/* ‘Œ–Ã¿ ¬¬Œƒ¿ */
+/* –§–û–†–ú–ê –í–í–û–î–ê */
 .lf_input {
-BORDER-RIGHT:  #ffffff 1px solid;
-BORDER-TOP:    #999999 1px solid;
-BORDER-LEFT:   #999999 1px solid;
-BORDER-BOTTOM: #ffffff 1px solid;
-BACKGROUND-COLOR: #e4e0d8;
-font: 9pt Tahoma;
-width: 100%;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #999999 1px solid;
+	BORDER-LEFT: #999999 1px solid;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BACKGROUND-COLOR: #e4e0d8;
+	font: 9pt Tahoma;
+	width: 100%;
 }
 
-/* ——€À ¿ */
+/* –°–°–´–õ–ö–ê */
 .AA {
 	TEXT-DECORATION: none
 }
+
 .AA.visited {
 	TEXT-DECORATION: none
 }
+
 .AA:hover {
 	TEXT-DECORATION: underline;
-        COLOR: BLUE 
+	COLOR: BLUE
 }
 
 
 
- /* Font Definitions */
-p.a, li.a, div.a, p.2, li.2, div.2
-	{margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-indent:14.2pt;
-	text-autospace:none;
-	font-size:14.0pt;
-	font-family:"Times New Roman";}
+/* Font Definitions */
+p.a,
+li.a,
+div.a,
+p.2,
+li.2,
+div.2 {
+	margin-top: 6.0pt;
+	margin-right: 0cm;
+	margin-bottom: 0cm;
+	margin-left: 0cm;
+	margin-bottom: .0001pt;
+	text-align: justify;
+	text-indent: 14.2pt;
+	text-autospace: none;
+	font-size: 14.0pt;
+	font-family: "Times New Roman";
+}

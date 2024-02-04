@@ -1,11 +1,11 @@
 <?
 $out =""; $out1 =""; $i =0;
 $descriptions=""; $keywords=""; $title="";
-$out1 ="<b> Список форумов ";
+$out1 ="<b> РЎРїРёСЃРѕРє С„РѕСЂСѓРјРѕРІ ";
 
 if ($FID ==0){
   $out .="<TABLE border=0 width=100% cellpadding=2 cellspacing=0>";
-  $out .="<TR><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>Обсуждение публикаций и материалов сайта</font></b></TD><TD class=lf_tr bgcolor = $dark_color>Тем</TD><TD class=lf_tr bgcolor = $dark_color>Сообщ.</TD><TD class=lf_tr bgcolor = $dark_color>Последнее</TD></TR>";
+  $out .="<TR><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>РћР±СЃСѓР¶РґРµРЅРёРµ РїСѓР±Р»РёРєР°С†РёР№ Рё РјР°С‚РµСЂРёР°Р»РѕРІ СЃР°Р№С‚Р°</font></b></TD><TD class=lf_tr bgcolor = $dark_color>РўРµРј</TD><TD class=lf_tr bgcolor = $dark_color>РЎРѕРѕР±С‰.</TD><TD class=lf_tr bgcolor = $dark_color>РџРѕСЃР»РµРґРЅРµРµ</TD></TR>";
   $r=mysql_query("SELECT CID, name, lasttime, lastnick FROM ok_categories WHERE visible = 1 and tip <> 3 and discussion =1 order by parent, pnum");
   while($Row=mysql_fetch_array($r)) {
 	$descriptions .="$Row[name]. ";
@@ -24,7 +24,7 @@ if ($FID ==0){
   $r=mysql_query("SELECT parent, CID, name FROM ok_categories WHERE visible = 1 and tip = 3 and discussion =1 and parent=0");
   while($R=mysql_fetch_array($r)) {
 	$descriptions .="$R[name]. ";
-	$out .="<TR><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>$R[name]</font></b></TD><TD class=lf_tr bgcolor = $dark_color>Тем</TD><TD class=lf_tr bgcolor = $dark_color>Сообщ.</TD><TD class=lf_tr bgcolor = $dark_color>Последнее</TD></TR>";
+	$out .="<TR><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>$R[name]</font></b></TD><TD class=lf_tr bgcolor = $dark_color>РўРµРј</TD><TD class=lf_tr bgcolor = $dark_color>РЎРѕРѕР±С‰.</TD><TD class=lf_tr bgcolor = $dark_color>РџРѕСЃР»РµРґРЅРµРµ</TD></TR>";
 	$p=mysql_query("SELECT CID, name, lastnick, lasttime FROM ok_categories WHERE visible = 1 and parent=$R[CID]");
 	$ii = 0;
          while($Row=mysql_fetch_array($p)) {
@@ -38,7 +38,7 @@ if ($FID ==0){
 	}Else{
 	    $out .="<TR bgcolor='#eaeff4'>";
 	}
- 
+
          if ($Row[lasttime]) $time = date("d.m.Y H:i", $Row[lasttime]-$localtime * 3600); else $time = '';
 	 	$out .="<TD class=lf_tr><a href=index.php?FID=$Row[CID]>$Row[name]</a></TD>
 		<TD class=lf_tr>$t_count</TD>
@@ -51,17 +51,17 @@ if ($FID ==0){
 
 
 }else{
-  $out1 ="<b><a href=index.php?FID=0> Форумы </a>:";
+  $out1 ="<b><a href=index.php?FID=0> Р¤РѕСЂСѓРјС‹ </a>:";
   $r=mysql_query("SELECT CID, name, description FROM ok_categories WHERE visible = 1 and CID='$FID'");
   $R=mysql_fetch_array($r); $out1 .=" $R[name] ";
   $descriptions .="$R[name]. ";
 
-  if (isset($login)) $out .="<a href=index.php?act=newforum&CID=$R[CID]>Новая тема</a>";
+  if (isset($login)) $out .="<a href=index.php?act=newforum&CID=$R[CID]>РќРѕРІР°СЏ С‚РµРјР°</a>";
   $out .="<TABLE border=0 width=100% cellpadding=2 cellspacing=0>";
-  $out .="<TR><TD class=lf_tr bgcolor = $dark_color>ico</TD><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>$R[name]</font></b></TD><TD class=lf_tr bgcolor = $dark_color>Всего</TD><TD class=lf_tr bgcolor = $dark_color>Автор</TD><TD class=lf_tr bgcolor = $dark_color>Просм.</TD><TD class=lf_tr bgcolor = $dark_color>Последнее</TD></TR>";
+  $out .="<TR><TD class=lf_tr bgcolor = $dark_color>ico</TD><TD class=lf_tr width=100% bgcolor = $dark_color><b><font color ='#ffffff'>$R[name]</font></b></TD><TD class=lf_tr bgcolor = $dark_color>Р’СЃРµРіРѕ</TD><TD class=lf_tr bgcolor = $dark_color>РђРІС‚РѕСЂ</TD><TD class=lf_tr bgcolor = $dark_color>РџСЂРѕСЃРј.</TD><TD class=lf_tr bgcolor = $dark_color>РџРѕСЃР»РµРґРЅРµРµ</TD></TR>";
 
 //------------------------------
-// страничный навигатор
+// СЃС‚СЂР°РЅРёС‡РЅС‹Р№ РЅР°РІРёРіР°С‚РѕСЂ
 $rr=mysql_query("SELECT count(*) from ok_products WHERE visible = 1 and CID='$FID'");
 $g_count = mysql_fetch_row($rr); $g_count = $g_count[0];
 if ($offset>$g_count || !isset($offset)) $offset=0;
@@ -90,7 +90,7 @@ showNavigator($g_count, $offset, 20, "index.php?FID=$FID&",&$out1);
 		<TD class=lf_tr>$Row[fcounter]</TD>
 		<TD class=lf_tr>$time<br>$Row[lastnick]</TD>
 		</TR>";
-  }	
+  }
   $out .="</TD></TR></TABLE>";
 //  $out .="</table><TABLE border='1' width='100%' cellpadding='0' cellspacing='3'><TR><TD colspan='2' height='23' bgcolor='#4e7dc1'><font size=-1 color=#ffffff>$out1</font></TD></TR>";
 

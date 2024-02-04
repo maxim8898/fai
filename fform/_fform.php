@@ -1,6 +1,6 @@
 <?
 //extract($_POST); extract($_GET);
-   if (!defined('loginform')) exit("Константа loginform не определена, не правильный вызов программы. <P> <b>phpLoginForm</b> - <a href=http://php.spb.ru/phpLoginForm/>http://php.spb.ru/phpLoginForm/</a>");
+   if (!defined('loginform')) exit("РљРѕРЅСЃС‚Р°РЅС‚Р° loginform РЅРµ РѕРїСЂРµРґРµР»РµРЅР°, РЅРµ РїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р·РѕРІ РїСЂРѕРіСЂР°РјРјС‹. <P> <b>phpLoginForm</b> - <a href=http://php.spb.ru/phpLoginForm/>http://php.spb.ru/phpLoginForm/</a>");
 
 $PHP_SELF = $_SERVER['PHP_SELF'];
 $Self = $_SERVER['PHP_SELF'];
@@ -9,25 +9,25 @@ function lfpregtrim($str) {
 }
 
 function lfcheck_url($url) {
-   // режем левые символы и крайние пробелы
+   // СЂРµР¶РµРј Р»РµРІС‹Рµ СЃРёРјРІРѕР»С‹ Рё РєСЂР°Р№РЅРёРµ РїСЂРѕР±РµР»С‹
    $url=trim(lfpregtrim($url));
-   // если пусто - выход
+   // РµСЃР»Рё РїСѓСЃС‚Рѕ - РІС‹С…РѕРґ
    if (strlen($url)==0) return false;
-   //проверяем УРЛ на правильность
+   //РїСЂРѕРІРµСЂСЏРµРј РЈР Р› РЅР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ
    if (!preg_match("~^(?:(?:https?|ftp|telnet)://(?:[a-z0-9_-]{1,32}(?::[a-z0-9_-]{1,32})?@)?)?(?:(?:[a-z0-9-]{1,128}\.)+(?:com|net|org|mil|edu|arpa|gov|biz|info|aero|[a-z]{2})|(?!0)(?:(?!0[^.]|255)[0-9]{1,3}\.){3}(?!0|255)[0-9]{1,3})(?:/[a-z0-9.,_@%&?+=\~/-]*)?(?:#[^ '\"&<>]*)?$~i",$url,$ok))
-   return false; // если не правильно - выход
-   // если нет протокала - добавить
+   return false; // РµСЃР»Рё РЅРµ РїСЂР°РІРёР»СЊРЅРѕ - РІС‹С…РѕРґ
+   // РµСЃР»Рё РЅРµС‚ РїСЂРѕС‚РѕРєР°Р»Р° - РґРѕР±Р°РІРёС‚СЊ
    if (!strstr($url,"://")) $url="http://".$url;
-   // заменить протокол на нижний регистр: hTtP -> http
+   // Р·Р°РјРµРЅРёС‚СЊ РїСЂРѕС‚РѕРєРѕР» РЅР° РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ: hTtP -> http
    $url=preg_replace("~^[a-z]+~ie","strtolower('\\0')",$url);
    return $url;
 }
 
 
 function lfcheck_mail($mail) {
-   // режем левые символы и крайние пробелы
+   // СЂРµР¶РµРј Р»РµРІС‹Рµ СЃРёРјРІРѕР»С‹ Рё РєСЂР°Р№РЅРёРµ РїСЂРѕР±РµР»С‹
    $mail=trim(lfpregtrim($mail));
-   // если пусто - выход
+   // РµСЃР»Рё РїСѓСЃС‚Рѕ - РІС‹С…РѕРґ
    if (strlen($mail)==0) return false;
    if (!preg_match("/^[a-z0-9_.-]{1,20}@(([a-z0-9-]+\.)+(com|net|org|mil|edu|gov|arpa|info|biz|[a-z]{2})|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$/is",$mail))
    return false;
@@ -62,11 +62,11 @@ function lfrows($mmin,$mmax,$str) {
 function lfexit($msg,$stop=1) {
    echo ("</td></tr></table></td></tr></table></td></tr></table></td></tr></table><br><br><br>
    <font color=red><b>
-   Во время выполнения loginform_show() произошла ошибка,
-   связанная с неверной настройкой формы. Откройте
-   файл или массив, описывающий форму, и исправьте ошибку.
-   Это не ошибка программы. Функция loginform_show() прервана.
-   <br><br>Текст ошибки:<br><br><table width=100% border=0 cellspacing=0 cellpadding=6>
+   Р’Рѕ РІСЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ loginform_show() РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°,
+   СЃРІСЏР·Р°РЅРЅР°СЏ СЃ РЅРµРІРµСЂРЅРѕР№ РЅР°СЃС‚СЂРѕР№РєРѕР№ С„РѕСЂРјС‹. РћС‚РєСЂРѕР№С‚Рµ
+   С„Р°Р№Р» РёР»Рё РјР°СЃСЃРёРІ, РѕРїРёСЃС‹РІР°СЋС‰РёР№ С„РѕСЂРјСѓ, Рё РёСЃРїСЂР°РІСЊС‚Рµ РѕС€РёР±РєСѓ.
+   Р­С‚Рѕ РЅРµ РѕС€РёР±РєР° РїСЂРѕРіСЂР°РјРјС‹. Р¤СѓРЅРєС†РёСЏ loginform_show() РїСЂРµСЂРІР°РЅР°.
+   <br><br>РўРµРєСЃС‚ РѕС€РёР±РєРё:<br><br><table width=100% border=0 cellspacing=0 cellpadding=6>
    <tr><td bgcolor=#ffaa99>&nbsp;<br>
    $msg<P></td></tr></table>
    </b></font>");
@@ -74,7 +74,7 @@ function lfexit($msg,$stop=1) {
 }
 
 //
-// В качестве аргумента передать либо имя файла формы, либо саму форму в массиве
+// Р’ РєР°С‡РµСЃС‚РІРµ Р°СЂРіСѓРјРµРЅС‚Р° РїРµСЂРµРґР°С‚СЊ Р»РёР±Рѕ РёРјСЏ С„Р°Р№Р»Р° С„РѕСЂРјС‹, Р»РёР±Рѕ СЃР°РјСѓ С„РѕСЂРјСѓ РІ РјР°СЃСЃРёРІРµ
 //
 
 function loginform_show($obj) {
@@ -83,34 +83,34 @@ function loginform_show($obj) {
 
    if (is_array($obj)) $buf=$obj;
    else {
-      if (!file_exists($obj)) lfexit("Не найден файл формы: $obj");
-      $f=fopen($obj,"rb") or lfexit("Файл существует на диске, но нет прав открыть на чтение: $obj");
+      if (!file_exists($obj)) lfexit("РќРµ РЅР°Р№РґРµРЅ С„Р°Р№Р» С„РѕСЂРјС‹: $obj");
+      $f=fopen($obj,"rb") or lfexit("Р¤Р°Р№Р» СЃСѓС‰РµСЃС‚РІСѓРµС‚ РЅР° РґРёСЃРєРµ, РЅРѕ РЅРµС‚ РїСЂР°РІ РѕС‚РєСЂС‹С‚СЊ РЅР° С‡С‚РµРЅРёРµ: $obj");
       $buf="";
       $fs=filesize($obj);
       $buf1=fread($f,$fs);
       $buf=unserialize($buf1);
       if (!is_array($buf)) {
          echo "\n\n\n\n\n<textarea rows=10 cols=70>".htmlspecialchars($buf1)."</textarea>\n\n\n\n\n\n";
-         lfexit("loginform_show #1: Ошибка распаковки конфиг файла $obj (прочитано ".strlen($buf1)." байт из $fs)<P>\n
-         Если в данный момент вы ставите чат, то проблема в следующем (иначе просто кем-то испорчен
-         файл при копировании/переносе, но не чатом).<P>\n
-         Видимо, вы не умеете копировать файлы по FTP, пытаясь поставить сейчас чат. 
-         Еще, весьма вероятно, что вы копировали файлы в наитупейшем FTP-менеджере 
-         CuteFTP. <u>Одним словом, во время выполнения инсталляции копируйте файлы 
-         FTP-клиентом, в которым включен <b>BINARY MODE</b> - режим передачи двоичных данных.</u>
-         Рекомендуется копировать из FAR'а, в котором этот режим работает по-умолчанию.\n<P>
-         Если копировать файлы чата в TEXT MODE, вместо BINARY, то файлы
-         портятся, отличаются по содержимому и длине. Подробнее читайте в FAQ'е и UNIX.HTML.");
+         lfexit("loginform_show #1: РћС€РёР±РєР° СЂР°СЃРїР°РєРѕРІРєРё РєРѕРЅС„РёРі С„Р°Р№Р»Р° $obj (РїСЂРѕС‡РёС‚Р°РЅРѕ ".strlen($buf1)." Р±Р°Р№С‚ РёР· $fs)<P>\n
+         Р•СЃР»Рё РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РІС‹ СЃС‚Р°РІРёС‚Рµ С‡Р°С‚, С‚Рѕ РїСЂРѕР±Р»РµРјР° РІ СЃР»РµРґСѓСЋС‰РµРј (РёРЅР°С‡Рµ РїСЂРѕСЃС‚Рѕ РєРµРј-С‚Рѕ РёСЃРїРѕСЂС‡РµРЅ
+         С„Р°Р№Р» РїСЂРё РєРѕРїРёСЂРѕРІР°РЅРёРё/РїРµСЂРµРЅРѕСЃРµ, РЅРѕ РЅРµ С‡Р°С‚РѕРј).<P>\n
+         Р’РёРґРёРјРѕ, РІС‹ РЅРµ СѓРјРµРµС‚Рµ РєРѕРїРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ РїРѕ FTP, РїС‹С‚Р°СЏСЃСЊ РїРѕСЃС‚Р°РІРёС‚СЊ СЃРµР№С‡Р°СЃ С‡Р°С‚.
+         Р•С‰Рµ, РІРµСЃСЊРјР° РІРµСЂРѕСЏС‚РЅРѕ, С‡С‚Рѕ РІС‹ РєРѕРїРёСЂРѕРІР°Р»Рё С„Р°Р№Р»С‹ РІ РЅР°РёС‚СѓРїРµР№С€РµРј FTP-РјРµРЅРµРґР¶РµСЂРµ
+         CuteFTP. <u>РћРґРЅРёРј СЃР»РѕРІРѕРј, РІРѕ РІСЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РёРЅСЃС‚Р°Р»Р»СЏС†РёРё РєРѕРїРёСЂСѓР№С‚Рµ С„Р°Р№Р»С‹
+         FTP-РєР»РёРµРЅС‚РѕРј, РІ РєРѕС‚РѕСЂС‹Рј РІРєР»СЋС‡РµРЅ <b>BINARY MODE</b> - СЂРµР¶РёРј РїРµСЂРµРґР°С‡Рё РґРІРѕРёС‡РЅС‹С… РґР°РЅРЅС‹С….</u>
+         Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РєРѕРїРёСЂРѕРІР°С‚СЊ РёР· FAR'Р°, РІ РєРѕС‚РѕСЂРѕРј СЌС‚РѕС‚ СЂРµР¶РёРј СЂР°Р±РѕС‚Р°РµС‚ РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ.\n<P>
+         Р•СЃР»Рё РєРѕРїРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ С‡Р°С‚Р° РІ TEXT MODE, РІРјРµСЃС‚Рѕ BINARY, С‚Рѕ С„Р°Р№Р»С‹
+         РїРѕСЂС‚СЏС‚СЃСЏ, РѕС‚Р»РёС‡Р°СЋС‚СЃСЏ РїРѕ СЃРѕРґРµСЂР¶РёРјРѕРјСѓ Рё РґР»РёРЅРµ. РџРѕРґСЂРѕР±РЅРµРµ С‡РёС‚Р°Р№С‚Рµ РІ FAQ'Рµ Рё UNIX.HTML.");
       }
       fclose($f);
    }
 
    $html="";
 
-   $flag=0; 
+   $flag=0;
    $form=array();
    if (isset($GLOBALS[$buf['_var']])) {
-      $flag=1;   
+      $flag=1;
       $form=$GLOBALS[$buf['_var']];
    }
 
@@ -120,13 +120,13 @@ function loginform_show($obj) {
    if (isset($GLOBALS[$buf['_error']])) {
       $error=$GLOBALS[$buf['_error']];
    }
-  
+
    if ($flag) {
       $form2=$buf['_var']."2";
       unset($GLOBALS[$form2]);
       $GLOBALS[$form2]=array();
       foreach ($form as $k=>$v) {
-         if (!isset($buf[$k]) || $k[0]=="_") { 
+         if (!isset($buf[$k]) || $k[0]=="_") {
             unset($form[$k]);
             continue;
          }
@@ -152,23 +152,23 @@ function loginform_show($obj) {
 
          if ($v['trim'] && isset($form[$k])) $form[$k]=trim($form[$k]);
          if ($v['check='] && (!isset($form[$v['check=']]) || $form[$k]!=$form[$v['check=']]))
-            $error[$k][]="это поле должно совпадать с ".$v['check=']." (введите в оба поля одно и тоже значение)";
+            $error[$k][]="СЌС‚Рѕ РїРѕР»Рµ РґРѕР»Р¶РЅРѕ СЃРѕРІРїР°РґР°С‚СЊ СЃ ".$v['check=']." (РІРІРµРґРёС‚Рµ РІ РѕР±Р° РїРѕР»СЏ РѕРґРЅРѕ Рё С‚РѕР¶Рµ Р·РЅР°С‡РµРЅРёРµ)";
          if ($v['type']!="checkbox" && $v['type']!="radio" && $v['type']!="file" && !isset($form[$k]))
-            $error[$k][]="поле не передено (ошибочный HTTP-запрос)";
+            $error[$k][]="РїРѕР»Рµ РЅРµ РїРµСЂРµРґРµРЅРѕ (РѕС€РёР±РѕС‡РЅС‹Р№ HTTP-Р·Р°РїСЂРѕСЃ)";
          if ((/*$v['type']=="checkbox" ||*/ $v['type']=="radio")
             && !isset($form[$k]) && $v['need'])
-            $error[$k][]="поле не заполнено, пожалуйста, выберите один из вариантов";
-         if (($v['type']=="radio" || $v['type']=="select") 
+            $error[$k][]="РїРѕР»Рµ РЅРµ Р·Р°РїРѕР»РЅРµРЅРѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ РѕРґРёРЅ РёР· РІР°СЂРёР°РЅС‚РѕРІ";
+         if (($v['type']=="radio" || $v['type']=="select")
             && $buf[$k]['need'] && isset($form[$k]) && $v['default']==$form[$k])
-            $error[$k][]="поле осталось не измененным, пожалуйста, выберите любой из вариантов, кроме варианта по-умолчанию";
+            $error[$k][]="РїРѕР»Рµ РѕСЃС‚Р°Р»РѕСЃСЊ РЅРµ РёР·РјРµРЅРµРЅРЅС‹Рј, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ Р»СЋР±РѕР№ РёР· РІР°СЂРёР°РЅС‚РѕРІ, РєСЂРѕРјРµ РІР°СЂРёР°РЅС‚Р° РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ";
          if (!isset($error[$k]) && ($v['type']=="text" || $v['type']=="textarea" || $v['type']=="password")) {
             if ($form[$k]=="" && $v['need'])
-               $error[$k][]="поле не заполнено";
+               $error[$k][]="РїРѕР»Рµ РЅРµ Р·Р°РїРѕР»РЅРµРЅРѕ";
             if ($form[$k]!="") {
                if ($v['sizemin']!="" && strlen($form[$k])<$v['sizemin'])
-                  $error[$k][]="слишком короткое значение поля (минимум $v[sizemin] символов)";
+                  $error[$k][]="СЃР»РёС€РєРѕРј РєРѕСЂРѕС‚РєРѕРµ Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ (РјРёРЅРёРјСѓРј $v[sizemin] СЃРёРјРІРѕР»РѕРІ)";
                if ($v['sizemax']!="" && strlen($form[$k])>$v['sizemax'])
-                  $error[$k][]="слишком большое значение поля (максимум $v[sizemax] символов)";
+                  $error[$k][]="СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РѕРµ Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ (РјР°РєСЃРёРјСѓРј $v[sizemax] СЃРёРјРІРѕР»РѕРІ)";
             }
          }
 
@@ -178,31 +178,31 @@ function loginform_show($obj) {
          switch ($v['check']) {
             case "int":
                $res=lfcheck_int($form[$k]);
-               if ($res===false) {$error[$k][]="введите целое число"; continue;}
+               if ($res===false) {$error[$k][]="РІРІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ"; continue;}
                $form[$k]=$res;
                break;
             case "date":
                $res=lfcheck_date($form[$k]);
-               if ($res===false) {$error[$k][]="введите правильную дату: 00/00/00 или 00.00.0000"; continue;}
+               if ($res===false) {$error[$k][]="РІРІРµРґРёС‚Рµ РїСЂР°РІРёР»СЊРЅСѓСЋ РґР°С‚Сѓ: 00/00/00 РёР»Рё 00.00.0000"; continue;}
                $form[$k]=$res;
                break;
             case "icq":
                $res=lfcheck_icq($form[$k]);
-               if ($res===false) {$error[$k][]="введите правильный номер ICQ"; continue;}
+               if ($res===false) {$error[$k][]="РІРІРµРґРёС‚Рµ РїСЂР°РІРёР»СЊРЅС‹Р№ РЅРѕРјРµСЂ ICQ"; continue;}
                $form[$k]=$res;
                break;
             case "url":
                $res=lfcheck_url($form[$k]);
-               if ($res===false) {$error[$k][]="введите правильный URL"; continue;}
+               if ($res===false) {$error[$k][]="РІРІРµРґРёС‚Рµ РїСЂР°РІРёР»СЊРЅС‹Р№ URL"; continue;}
                $form[$k]=$res;
                break;
             case "mail":
                $res=lfcheck_mail($form[$k]);
-               if ($res===false) {$error[$k][]="ошибочный E-mail"; continue;}
+               if ($res===false) {$error[$k][]="РѕС€РёР±РѕС‡РЅС‹Р№ E-mail"; continue;}
                $form[$k]=$res;
                break;
             default:
-               lfexit("Неизвестный тип проверки формы в поле 'check' - [$v[check]]");
+               lfexit("РќРµРёР·РІРµСЃС‚РЅС‹Р№ С‚РёРї РїСЂРѕРІРµСЂРєРё С„РѕСЂРјС‹ РІ РїРѕР»Рµ 'check' - [$v[check]]");
          }
       }
 
@@ -246,49 +246,49 @@ function loginform_show($obj) {
             $input.= $form[$k];
             break;
 
-         case "radio": 
-         case "select": 
-            
-            if (empty($v['value'])) return(lfexit("У поля [$k] не задан параметр [value]",0));
-            if (empty($v['textval'])) return(lfexit("У поля [$k] не задан параметр [textval]",0));
+         case "radio":
+         case "select":
+
+            if (empty($v['value'])) return(lfexit("РЈ РїРѕР»СЏ [$k] РЅРµ Р·Р°РґР°РЅ РїР°СЂР°РјРµС‚СЂ [value]",0));
+            if (empty($v['textval'])) return(lfexit("РЈ РїРѕР»СЏ [$k] РЅРµ Р·Р°РґР°РЅ РїР°СЂР°РјРµС‚СЂ [textval]",0));
             $vals=explode("--",$v['value']);
             $names=explode("--",$v['textval']);
-            
+
             foreach ($vals as $kk=>$vv) {
                if (strpos($vv,"<AUTO>")!==false && preg_match("!<AUTO>([0-9]{1,9})-([0-9]{1,9})</AUTO>!",$vv,$ok)) {
-                  if ($ok[1]>=$ok[2]) return(lfexit("У поля [$k] ошибка в тегах &lt;AUTO&gt;: сначала меньшее, потом большее число",0));
-                  if ($ok[2]-$ok[1]>2100) return(lfexit("У поля [$k] ошибка в тегах &lt;AUTO&gt;: разница чисел не должна быть более 2100",0));
+                  if ($ok[1]>=$ok[2]) return(lfexit("РЈ РїРѕР»СЏ [$k] РѕС€РёР±РєР° РІ С‚РµРіР°С… &lt;AUTO&gt;: СЃРЅР°С‡Р°Р»Р° РјРµРЅСЊС€РµРµ, РїРѕС‚РѕРј Р±РѕР»СЊС€РµРµ С‡РёСЃР»Рѕ",0));
+                  if ($ok[2]-$ok[1]>2100) return(lfexit("РЈ РїРѕР»СЏ [$k] РѕС€РёР±РєР° РІ С‚РµРіР°С… &lt;AUTO&gt;: СЂР°Р·РЅРёС†Р° С‡РёСЃРµР» РЅРµ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р±РѕР»РµРµ 2100",0));
                   for ($i=$ok[1]; $i<$ok[2]; $i++) {
                      array_push($vals,$i);
                   }
                   unset($vals[$kk]);
                }
                if (strpos($vv,"<VAR>")!==false && preg_match("!<VAR>\\\$(lf_[A-Za-z0-9_]{2,100})</VAR>!",$vv,$ok)) {
-                  if (isset($GLOBALS[$ok[1]]) && count($GLOBALS[$ok[1]])) 
+                  if (isset($GLOBALS[$ok[1]]) && count($GLOBALS[$ok[1]]))
                      foreach ($GLOBALS[$ok[1]] as $kkk=>$vvv) array_push($vals,$vvv);
                   unset($vals[$kk]);
                }
             }
             foreach ($names as $kk=>$vv) {
                if (strpos($vv,"<AUTO>")!==false && preg_match("!<AUTO> *([0-9]{1,9}) *- *([0-9]{1,9}) *</AUTO>!",$vv,$ok)) {
-                  if ($ok[1]>=$ok[2]) return(lfexit("У поля [$k] ошибка в тегах &lt;AUTO&gt;: сначала меньшее, потом большее число",0));
-                  if ($ok[2]-$ok[1]>2100) return(lfexit("У поля [$k] ошибка в тегах &lt;AUTO&gt;: разница чисел не должна быть более 2100",0));
+                  if ($ok[1]>=$ok[2]) return(lfexit("РЈ РїРѕР»СЏ [$k] РѕС€РёР±РєР° РІ С‚РµРіР°С… &lt;AUTO&gt;: СЃРЅР°С‡Р°Р»Р° РјРµРЅСЊС€РµРµ, РїРѕС‚РѕРј Р±РѕР»СЊС€РµРµ С‡РёСЃР»Рѕ",0));
+                  if ($ok[2]-$ok[1]>2100) return(lfexit("РЈ РїРѕР»СЏ [$k] РѕС€РёР±РєР° РІ С‚РµРіР°С… &lt;AUTO&gt;: СЂР°Р·РЅРёС†Р° С‡РёСЃРµР» РЅРµ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р±РѕР»РµРµ 2100",0));
                   for ($i=$ok[1]; $i<$ok[2]; $i++) {
                      array_push($names,$i);
                   }
                   unset($names[$kk]);
                }
                if (strpos($vv,"<VAR>")!==false && preg_match("!<VAR>\\\$(lf_[a-z0-9_]{2,100})</VAR>!",$vv,$ok)) {
-                  if (isset($GLOBALS[$ok[1]]) && count($GLOBALS[$ok[1]])) 
+                  if (isset($GLOBALS[$ok[1]]) && count($GLOBALS[$ok[1]]))
                      foreach ($GLOBALS[$ok[1]] as $kkk=>$vvv) array_push($names,$vvv);
                   unset($names[$kk]);
                }
             }
 
             if ($flag && isset($form[$k]) && !in_array($form[$k],$vals))
-               $error[$k][]="недопустимое значение в $v[type] (ошибочный HTTP-запрос)";               
+               $error[$k][]="РЅРµРґРѕРїСѓСЃС‚РёРјРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ $v[type] (РѕС€РёР±РѕС‡РЅС‹Р№ HTTP-Р·Р°РїСЂРѕСЃ)";
 
-            if (count($vals)!=count($names)) return(lfexit("У поля [$k] не совпадают варианты ответов (параметр [value]) и сообщения для вариантов (параметр [textval])",0));
+            if (count($vals)!=count($names)) return(lfexit("РЈ РїРѕР»СЏ [$k] РЅРµ СЃРѕРІРїР°РґР°СЋС‚ РІР°СЂРёР°РЅС‚С‹ РѕС‚РІРµС‚РѕРІ (РїР°СЂР°РјРµС‚СЂ [value]) Рё СЃРѕРѕР±С‰РµРЅРёСЏ РґР»СЏ РІР°СЂРёР°РЅС‚РѕРІ (РїР°СЂР°РјРµС‚СЂ [textval])",0));
 
             if ($v['type']=="select") {
                $input.="<select name=$buf[_var][$k] size='$v[rows]' ".
@@ -313,10 +313,10 @@ function loginform_show($obj) {
             break;
 
          default:
-            return(lfexit("[$v[type]] - неизвестный тип поля [$k]",0));
+            return(lfexit("[$v[type]] - РЅРµРёР·РІРµСЃС‚РЅС‹Р№ С‚РёРї РїРѕР»СЏ [$k]",0));
 
       }
-if ($v['public']==0){ $html.="<input type='hidden' name=$buf[_var][$k] value=\"".htmlspecialchars($form[$k])."\" "; continue;}	
+if ($v['public']==0){ $html.="<input type='hidden' name=$buf[_var][$k] value=\"".htmlspecialchars($form[$k])."\" "; continue;}
       $input.=$v['html2'];
       if ($desc=="") $desc=$v['textreg'];
       $tmp=$buf['_form'];
@@ -325,7 +325,7 @@ if ($v['public']==0){ $html.="<input type='hidden' name=$buf[_var][$k] value=\""
       if ($v['need']) $tmp=preg_replace("!<NONEED>(.+?)</NONEED>!is","",$tmp);
       else            $tmp=preg_replace("!<NONEED>(.+?)</NONEED>!is","\\1",$tmp);
       $err="";
-      if (isset($error[$k])) $err="<li>".implode("<li>",$error[$k]); 
+      if (isset($error[$k])) $err="<li>".implode("<li>",$error[$k]);
       if ($err=="")
          $tmp=preg_replace("!<ERROR>(.+?)</ERROR>!is",$err,$tmp);
       else {

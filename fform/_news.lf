@@ -1,25 +1,25 @@
-a:13:{s:3:"NID";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"0";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:61:"»‰ÂÌÚËÙËÍ‡ÚÓ Í‡ÚÂ„ÓËË: <font color=red> ÕÂ ËÁÏÂÌˇÚ¸!</font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"pnum";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:17:"œÓˇ‰ÍÓ‚˚È ÌÓÏÂ:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"date";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:2:"10";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:5:"ƒ‡Ú‡:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"body";a:22:{s:4:"type";s:8:"textarea";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:1:"5";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:9:"ŒÔËÒ‡ÌËÂ:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"_var";s:4:"form";s:6:"_error";s:5:"error";s:5:"_main";s:414:"[CSS]
+a:13:{s:3:"NID";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"0";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:61:"–ò–¥–µ–Ω—Ç–∏—Ñ–∏–∫–∞—Ç–æ—Ä –∫–∞—Ç–µ–≥–æ—Ä–∏–∏: <font color=red> –ù–µ –∏–∑–º–µ–Ω—è—Ç—å!</font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"pnum";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:17:"–ü–æ—Ä—è–¥–∫–æ–≤—ã–π –Ω–æ–º–µ—Ä:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"date";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:2:"10";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:5:"–î–∞—Ç–∞:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"body";a:22:{s:4:"type";s:8:"textarea";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:1:"5";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:9:"–û–ø–∏—Å–∞–Ω–∏–µ:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"_var";s:4:"form";s:6:"_error";s:5:"error";s:5:"_main";s:414:"[CSS]
 <center>
 <form action='' method=post enctype=multipart/form-data>
    [SESSF]
    <input type=hidden name=onSubmit value=1>
    <input type=hidden name=Nedit value=1>
-     
+
    <table width=100% border=0 cellspacing=0 cellpadding=3>
       [MAIN]
    </table>
-   <br><input type=submit class=lf_submit value=—Óı‡ÌËÚ¸>  <input type=submit class=lf_submit name=Cancel value=ŒÚÏÂÌËÚ¸>
+   <br><input type=submit class=lf_submit value=–°–æ—Ö—Ä–∞–Ω–∏—Ç—å>  <input type=submit class=lf_submit name=Cancel value=–û—Ç–º–µ–Ω–∏—Ç—å>
 
 </form>
 </center>";s:5:"_form";s:236:"<tr>
 <td class=lf_tr width=50%>[DESCRIPTION]</td>
 <td class=lf_tr width=50% <ERROR>bgcolor=#FFCCCC</ERROR>>
-   [INPUT] 
-   <ERROR><center><b><font color=#aa0000>Œ¯Ë·Í‡ ÔË Á‡ÔÓÎÌÂÌËË:</font></b></center>[ERROR]</ERROR>
+   [INPUT]
+   <ERROR><center><b><font color=#aa0000>–û—à–∏–±–∫–∞ –ø—Ä–∏ –∑–∞–ø–æ–ª–Ω–µ–Ω–∏–∏:</font></b></center>[ERROR]</ERROR>
 </td>
 </tr>";s:4:"_css";s:1174:"<STYLE><!--
 
-/* «¿√ŒÀŒ  “¿¡À»÷€ */
+/* –ó–ê–ì–û–õ–û–ö –¢–ê–ë–õ–ò–¶–´ */
 .lf_table {
 BORDER-RIGHT:  #eeeeee 2px outset;
 BORDER-TOP:    #eeeeee 2px outset;
@@ -28,7 +28,7 @@ BORDER-BOTTOM: #eeeeee 2px outset;
 BACKGROUND-COLOR: #D4D0C8;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ */
 .lf_tr {
 BORDER-RIGHT:  #aaaaaa 1px solid;
 BORDER-TOP:    #eeeeee 1px solid;
@@ -37,7 +37,7 @@ BORDER-BOTTOM: #aaaaaa 1px solid;
 font: 75% Tahoma;
 }
 
-/* ‘Œ–Ã¿ ¬¬Œƒ¿ */
+/* –§–û–†–ú–ê –í–í–û–î–ê */
 .lf_input {
 BORDER-RIGHT:  #ffffff 1px solid;
 BORDER-TOP:    #999999 1px solid;
@@ -48,7 +48,7 @@ font: 9pt Tahoma;
 width: 100%;
 }
 
-/* œŒÀ≈ FILE */
+/* –ü–û–õ–ï FILE */
 .lf_file {
 BORDER-RIGHT:  #ffffff 1px outset;
 BORDER-TOP:    #ffffff 1px outset;
@@ -60,14 +60,14 @@ width: 100%;
 }
 
 
-/*  ÕŒœ ¿ "SUBMIT" */
+/* –ö–ù–û–ü–ö–ê "SUBMIT" */
 .lf_submit {
 BORDER-RIGHT:  buttonhighlight 2px outset;
-BORDER-TOP:    buttonhighlight 2px outset; 
+BORDER-TOP:    buttonhighlight 2px outset;
 BORDER-LEFT:   buttonhighlight 2px outset;
 BORDER-BOTTOM: buttonhighlight 2px outset;
 BACKGROUND-COLOR: #e4e0d8;
 width: 30%;
 }
 
---></STYLE>";s:6:"image1";a:22:{s:4:"type";s:5:"image";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:21:"»ÁÓ·‡ÊÂÌËÂ (ËÍÓÌÍ‡):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"upload";a:22:{s:4:"type";s:4:"file";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:7:"lf_file";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:50:"«‡„ÛÁËÚ¸ ËÁÓ·‡ÊÂÌËÂ (ÂÍÓÏÂÌ‰ÛÂÏ‡ˇ ¯ËËÌ‡ 60 px)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:3:"PID";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:28:"ÕÓÏÂ ÒÚ‡ÌËˆ˚ ÒÒ˚ÎÍË (PID):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"visible";a:22:{s:4:"type";s:8:"checkbox";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:20:"œÓÍ‡Á˚‚‡Ú¸ ‚ ‡ÌÓÌÒ‡ı";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:21:"œÓÍ‡Á˚‚‡Ú¸ ‚ ‡ÌÓÌÒ‡ı:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}
+--></STYLE>";s:6:"image1";a:22:{s:4:"type";s:5:"image";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:21:"–ò–∑–æ–±—Ä–∞–∂–µ–Ω–∏–µ (–∏–∫–æ–Ω–∫–∞):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"upload";a:22:{s:4:"type";s:4:"file";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:7:"lf_file";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:50:"–ó–∞–≥—Ä—É–∑–∏—Ç—å –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–µ (—Ä–µ–∫–æ–º–µ–Ω–¥—É–µ–º–∞—è —à–∏—Ä–∏–Ω–∞ 60 px)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:3:"PID";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:28:"–ù–æ–º–µ—Ä —Å—Ç—Ä–∞–Ω–∏—Ü—ã —Å—Å—ã–ª–∫–∏ (PID):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"visible";a:22:{s:4:"type";s:8:"checkbox";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:20:"–ü–æ–∫–∞–∑—ã–≤–∞—Ç—å –≤ –∞–Ω–æ–Ω—Å–∞—Ö";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:21:"–ü–æ–∫–∞–∑—ã–≤–∞—Ç—å –≤ –∞–Ω–æ–Ω—Å–∞—Ö:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}

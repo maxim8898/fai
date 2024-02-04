@@ -2,10 +2,10 @@
 //echo"CID=$CID PID=$PID";
 if (isset($error)){
   include_once("config/error.php");
-  $out1="<center><font color=red>ОШИБКА</color></center>";
+  $out1="<center><font color=red>РћРЁРР‘РљРђ</color></center>";
   $out = $err[$error];
 //--------------------------------------------------
-}else{ 
+}else{
   if (isset($CID)) $CID = htmlspecialchars(trim($CID), ENT_QUOTES);
   if (isset($PID)) $PID = htmlspecialchars(trim($PID), ENT_QUOTES);
   if (isset($FID)) $FID = htmlspecialchars(trim($FID), ENT_QUOTES);
@@ -20,50 +20,50 @@ if (isset($error)){
 	$rr=mysql_query("SELECT count(*) from ok_discussions D, ok_users U WHERE D.login=U.login and D.PID=$DID");
 	$g_count = mysql_fetch_row($rr); $g_count = $g_count[0];
 	if ($offset>$g_count || !isset($offset)) $offset=0;
-  }	
+  }
 
   if (isset($newmess) && $ftext<>"" && $newmess<>''){
   	$ftext = htmlspecialchars(trim($ftext), ENT_QUOTES); $topic = htmlspecialchars(rtrim($topic), ENT_QUOTES);
   	for ($i = 1; $i <= 20; $i++) {
-    	  $ftext = str_replace (":sm$i:", "<img src=\'./img/sm$i.gif\'>", $ftext);	
+    	  $ftext = str_replace (":sm$i:", "<img src=\'./img/sm$i.gif\'>", $ftext);
   	}
 	$ftext = str_replace ("[p]", "<p>", $ftext); $ftext = str_replace ("[/p]", "</p>", $ftext);
 	$ftext = str_replace ("[b]", "<b>", $ftext); $ftext = str_replace ("[/b]", "</b>", $ftext);
 	$ftext = str_replace ("[i]", "<i>", $ftext); $ftext = str_replace ("[/i]", "</i>", $ftext);
 	$ftext = str_replace ("[u]", "<u>", $ftext); $ftext = str_replace ("[/u]", "</u>", $ftext);
 	$ftext = str_replace ("[Center]", "<center>", $ftext); $ftext = str_replace ("[/Center]", "</center>", $ftext);
-	$ftext = str_replace ("[br]", "<br>", $ftext); 
-	$ftext = str_replace ("[Quote]", "<font size=-2><br>Цитата:</font><p style=\'font-style:italic;background-color:$middle_color;\'>", $ftext);
+	$ftext = str_replace ("[br]", "<br>", $ftext);
+	$ftext = str_replace ("[Quote]", "<font size=-2><br>Р¦РёС‚Р°С‚Р°:</font><p style=\'font-style:italic;background-color:$middle_color;\'>", $ftext);
 	$ftext = str_replace ("[/Quote]", "</p>", $ftext);
 	$time = time();
 	if (isset($DID)) $P=$DID; else $P=$PID;
-	$result = MYSQL_QUERY("INSERT INTO ok_discussions SET login='$login', PID='$P', body='$ftext', time='$time', topic='$topic', CID='$C'"); 
-        $result = MYSQL_QUERY("UPDATE ok_products SET lastnick='$nick', lasttime='$time' where PID=$P"); 
-	$result = MYSQL_QUERY("UPDATE ok_categories SET lastnick='$nick', lasttime='$time' where CID=$C"); 
+	$result = MYSQL_QUERY("INSERT INTO ok_discussions SET login='$login', PID='$P', body='$ftext', time='$time', topic='$topic', CID='$C'");
+        $result = MYSQL_QUERY("UPDATE ok_products SET lastnick='$nick', lasttime='$time' where PID=$P");
+	$result = MYSQL_QUERY("UPDATE ok_categories SET lastnick='$nick', lasttime='$time' where CID=$C");
   }
   if (isset($act)){
     if ($act=='freg'){
-	$out1="<center>Регистрация на сайте</center>";
+	$out1="<center>Р РµРіРёСЃС‚СЂР°С†РёСЏ РЅР° СЃР°Р№С‚Рµ</center>";
 	include_once("fform/freg.php");  $out .= $buf;
     }else  if ($act=='ftest_osen2010'){
-	$out1="<center>Форма регистрации участника соревнований</center>";
+	$out1="<center>Р¤РѕСЂРјР° СЂРµРіРёСЃС‚СЂР°С†РёРё СѓС‡Р°СЃС‚РЅРёРєР° СЃРѕСЂРµРІРЅРѕРІР°РЅРёР№</center>";
 	include_once("fform/ftest_osen2010.php");  $out .= $buf;
 
     }else  if ($act=='fuser'){
-	$out1="<center>Персональные данные</center>";
+	$out1="<center>РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ</center>";
 	include_once("fform/fuser.php");  $out .= $buf;
     }else  if ($act=='forgot'){
-	$out1="<center>Восстановление пароля</center>";
+	$out1="<center>Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РїР°СЂРѕР»СЏ</center>";
 	include_once("fform/remember.php");  $out .= $buf;
     }else  if ($act=='newforum'){
-	$out1="<center>Новая тема на форуме</center>";
+	$out1="<center>РќРѕРІР°СЏ С‚РµРјР° РЅР° С„РѕСЂСѓРјРµ</center>";
 	include_once("fform/newforum.php");  $out .= $buf;
     }else  if ($act=='search'){
-	$out1="<center>Результаты поиска</center>";
-	if ($searchstring <> ''){ 
+	$out1="<center>Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР°</center>";
+	if ($searchstring <> ''){
 	  include_once("poisk.php");
 	}else{
-	  $out.="Не задана строка поиска";
+	  $out.="РќРµ Р·Р°РґР°РЅР° СЃС‚СЂРѕРєР° РїРѕРёСЃРєР°";
 	}
     }
 
@@ -71,15 +71,15 @@ if (isset($error)){
 	//include_once("stats.php");
 	include_once("./stat/view.php");
 
-  }else if (isset($CID)) { // Просмотр категорий
+  }else if (isset($CID)) { // РџСЂРѕСЃРјРѕС‚СЂ РєР°С‚РµРіРѕСЂРёР№
 	include_once("catview.php");
 
-  }else if (isset($FID)) { // Просмотр форумов
+  }else if (isset($FID)) { // РџСЂРѕСЃРјРѕС‚СЂ С„РѕСЂСѓРјРѕРІ
 	include_once("forum.php");
 
-  }else if (isset($PID) && $PID) { // Просмотр продуктов
+  }else if (isset($PID) && $PID) { // РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕРґСѓРєС‚РѕРІ
 
-    if (isset($DID)){ // Просмотр содержания материала
+    if (isset($DID)){ // РџСЂРѕСЃРјРѕС‚СЂ СЃРѕРґРµСЂР¶Р°РЅРёСЏ РјР°С‚РµСЂРёР°Р»Р°
       include_once("disview.php");
     }else{
       if (isset($mark)){
@@ -91,7 +91,7 @@ if (isset($error)){
       include_once("prodview.php");
     }
 
-  }else if (isset($DID)) { // просмотр форума
+  }else if (isset($DID)) { // РїСЂРѕСЃРјРѕС‚СЂ С„РѕСЂСѓРјР°
     include_once("disview.php");
   }else{
 	include_once("catview.php");

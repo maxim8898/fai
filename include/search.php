@@ -7,7 +7,7 @@ $out = "
   <COL span='1' align='left' width = '100%'>
   <COL span='1' align='left'>
 <tr>
-  <td>Поиск:</td>
+  <td>РџРѕРёСЃРє:</td>
   <td><input type=text name=searchstring size=40 value= $tmp></td>
   <td><input type=image border=0 src='./img/ok.gif'></td>
 </tr><tr>
@@ -18,7 +18,7 @@ $out = "
 	if (isset($CID)) $out .= "<input type=hidden name=FID value='$FID'>";
 	if (isset($DID)) $out .= "<input type=hidden name=DID value='$DID'>";
   $out .="
-  <input type='checkbox' name='inside' $tmp>искать в найденном
+  <input type='checkbox' name='inside' $tmp>РёСЃРєР°С‚СЊ РІ РЅР°Р№РґРµРЅРЅРѕРј
   <input type='hidden' name='act' value='search'>
 
 

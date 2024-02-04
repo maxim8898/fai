@@ -1,10 +1,10 @@
 <?
 $out ="";
 
-$out .="<img src='../img/cur1.gif' width='8' height='9'><a href=index.php onClick=parent.left.location.reload('left.php')> Главная</a><br>";
+$out .="<img src='../img/cur1.gif' width='8' height='9'><a href=index.php onClick=parent.left.location.reload('left.php')> Р“Р»Р°РІРЅР°СЏ</a><br>";
 
 
-if (!isset($CID)){ 
+if (!isset($CID)){
 	$CID=0; $parent = 0;
 }else{
 	$r=mysql_query("SELECT parent, name FROM ok_categories WHERE CID='$CID'");

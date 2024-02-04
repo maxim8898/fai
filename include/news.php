@@ -1,5 +1,5 @@
 <?
-// Публикация анонсов
+// РџСѓР±Р»РёРєР°С†РёСЏ Р°РЅРѕРЅСЃРѕРІ
 $out='';
 if (isset($login)){
   $res=mysql_query("SELECT pass, subscribe, email FROM ok_users WHERE login='$login'");
@@ -8,7 +8,7 @@ if (isset($login)){
 	$oksub = 1;
 	if (isset($subscribe)){
 	  $oksub = 0;
-	  $result = MYSQL_QUERY("UPDATE ok_users SET subscribe=1 WHERE login='$login'"); 
+	  $result = MYSQL_QUERY("UPDATE ok_users SET subscribe=1 WHERE login='$login'");
 	}
   }
 }
@@ -36,7 +36,7 @@ while ($row = mysql_fetch_assoc($q)){
 
 $out .= "<tr><td align=center>";
 if ($oksub == 1)	{
-	$out .= "<font class=light>Подписаться на новости</font><br><input type=text name=email value=\"$Row[email]\" size=22><br>";
+	$out .= "<font class=light>РџРѕРґРїРёСЃР°С‚СЊСЃСЏ РЅР° РЅРѕРІРѕСЃС‚Рё</font><br><input type=text name=email value=\"$Row[email]\" size=22><br>";
 	$out .= "<input type=submit class=redbutton value=\"OK\">";
 	if (isset($PID)) $out .= "<input type=hidden name=PID value=\"$PID\">";
 	if (isset($CID)) $out .= "<input type=hidden name=CID value=\"$CID\">";

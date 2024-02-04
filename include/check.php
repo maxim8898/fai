@@ -1,5 +1,5 @@
 <?
-// Модуль проверки и безопасности
+// РњРѕРґСѓР»СЊ РїСЂРѕРІРµСЂРєРё Рё Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё
 unset($error);
 
 $a = strpos($HTTP_REFERER, $mainurl);
@@ -7,9 +7,9 @@ $a = strpos($HTTP_REFERER, $mainurl);
 
 if ($a ===false || $a >11) {
 	$url = $REQUEST_URI;
-	$mail = "Попытка взлома на сайте \"$sitename\"\n\n";
+	$mail = "РџРѕРїС‹С‚РєР° РІР·Р»РѕРјР° РЅР° СЃР°Р№С‚Рµ \"$sitename\"\n\n";
 	$mail.= "REFFERER=$HTTP_REFERER\nURL: $HTTP_HOST\nIP : $REMOTE_ADDR";
-//	mail($email, "Попытка взлома на сайте \"$sitename\"", "$mail", "From: \"$sitename\"<$email>;\nContent-Type: text/plain; charset=\"windows-1251\"\nReturn-path: <$email>");
+//	mail($email, "РџРѕРїС‹С‚РєР° РІР·Р»РѕРјР° РЅР° СЃР°Р№С‚Рµ \"$sitename\"", "$mail", "From: \"$sitename\"<$email>;\nContent-Type: text/plain; charset=\"windows-1251\"\nReturn-path: <$email>");
 //	exit(header("Location: ./index.php?error=1"));
 }
 if(isset($login)){

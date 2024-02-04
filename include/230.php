@@ -1,5 +1,5 @@
 <?
-$phptxt .="<TABLE width=100% border=0 cellpadding=3 cellspacing=1 bgcolor=000000><tr bgcolor=#9cb4ca> <td>Фамилия</td> <td>Имя</td> <td>Страна</td> <td>Город</td> <td>Разряд</td> <td>Комплекс</td> <td>Модель</td> <td>Двигатель</td> <td>Передатчик</td> <td>Канал</td> </tr>";
+$phptxt .="<TABLE width=100% border=0 cellpadding=3 cellspacing=1 bgcolor=000000><tr bgcolor=#9cb4ca> <td>Р¤Р°РјРёР»РёСЏ</td> <td>РРјСЏ</td> <td>РЎС‚СЂР°РЅР°</td> <td>Р“РѕСЂРѕРґ</td> <td>Р Р°Р·СЂСЏРґ</td> <td>РљРѕРјРїР»РµРєСЃ</td> <td>РњРѕРґРµР»СЊ</td> <td>Р”РІРёРіР°С‚РµР»СЊ</td> <td>РџРµСЂРµРґР°С‚С‡РёРє</td> <td>РљР°РЅР°Р»</td> </tr>";
 
 $res=mysql_query("SELECT * FROM test_osen2010 ORDER BY datereg");
 //$tmp=mysql_fetch_assoc($res);

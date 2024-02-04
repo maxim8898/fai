@@ -1,14 +1,14 @@
 <?
 $out = "";
 $out .= "<Table width=100%>\n<Tr><Td>";
-if (!isset($save_voting_results)) { //форма опроса
+if (!isset($save_voting_results)) { //С„РѕСЂРјР° РѕРїСЂРѕСЃР°
 	$f = file("voting.txt");
 	$r = file("results.txt");
 	$m = $r[0] ? $r[0] : 0;
 	$m = max($m, 1);
 	for ($i=0; $i<count($r); $i++) if ($m < $r[$i]) $m = $r[$i];
 
-	//форма опроса
+	//С„РѕСЂРјР° РѕРїСЂРѕСЃР°
 	$out .= "<form action=\"index.php\" method=post>";
 	$out .= "<table cellspacing=0 cellpadding=0 width=100%>";
 	$out .= "<tr><td colspan=2><b>$f[0]</b></td></tr><tr><td>\n";
@@ -19,7 +19,7 @@ if (!isset($save_voting_results)) { //форма опроса
 	};
 	$out .= "</td></tr></table>";
 	$out .= "<p> </p><center>
-	<input type=hidden name=save_voting_results value='Ответить'>
+	<input type=hidden name=save_voting_results value='РћС‚РІРµС‚РёС‚СЊ'>
 	<input type=image  border=0 src='./img/send1.gif'>
 	</center>";
 	if (isset($PID)) $out .= "<input type=hidden name=PID value=\"$PID\">";
@@ -28,7 +28,7 @@ if (!isset($save_voting_results)) { //форма опроса
 	if (isset($CID)) $out .= "<input type=hidden name=DID value=\"$DID\">";
 	$out .= "</form>";
 
-}else {	//результаты опроса
+}else {	//СЂРµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°
 	$f = file("voting.txt");
 	if (!($r = file("results.txt"))){
 		$r = array();
@@ -38,12 +38,12 @@ if (!isset($save_voting_results)) { //форма опроса
 	if (!isset($vote_completed[0]) && isset($opt))
 		$r[$opt-1] = $r[$opt-1] + 1;
 
-	//запись изменений
+	//Р·Р°РїРёСЃСЊ РёР·РјРµРЅРµРЅРёР№
 	$f1 = fopen("results.txt","w");
 	for ($i=0; $i<count($r); $i++) fputs($f1, trim($r[$i])."\n");
 	fclose($f1);
 
-	//показать результаты
+	//РїРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚С‹
 	$m = $r[0] ? $r[0] : 0;
 	for ($i=0; $i<count($r); $i++) if ($m < $r[$i]) $m = $r[$i];
 	$m = max($m, 1);

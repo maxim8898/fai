@@ -1,20 +1,20 @@
 <?
 
-if (isset($logout)){ //завершение сеанса
+if (isset($logout)){ //Р·Р°РІРµСЂС€РµРЅРёРµ СЃРµР°РЅСЃР°
 	$login='';$pass='';
 	session_unregister("login"); session_unregister("pass"); session_unregister("nick");
 	SetCookie("login",$login , 0); SetCookie("pass",$pass , 0);
 	unset($login); unset($pass); unset($nick);
-}else if (isset($enter) && !isset($login)){ // авторизация
+}else if (isset($enter) && !isset($login)){ // Р°РІС‚РѕСЂРёР·Р°С†РёСЏ
         $user_login = htmlspecialchars(trim($user_login), ENT_QUOTES);
 	$q = mysql_query("SELECT pass, nick FROM ok_users WHERE login='$user_login'");
 	$row = mysql_fetch_array($q);
-	if (($row) && $row[pass] == MD5($user_pw)){ // проверка пользователя по БД
+	if (($row) && $row[pass] == MD5($user_pw)){ // РїСЂРѕРІРµСЂРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїРѕ Р‘Р”
 		$login = $user_login; $pass = $row[pass]; $nick = $row[nick];
 		session_register("login", "pass", "nick");
 		if (isset($save)){SetCookie("login", $login, time()+33600); SetCookie("pass", $pass, time()+33600);}
 
-		// обновление данных пользователя
+		// РѕР±РЅРѕРІР»РµРЅРёРµ РґР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 	//	mysql_query("UPDATE ok_users SET default_currency=$current_currency WHERE Login='$login'") or die (mysql_error());
 
 		//is it admin?
@@ -28,7 +28,7 @@ if (isset($logout)){ //завершение сеанса
 			}
 
 	}
-	else // Ошибочный логин
+	else // РћС€РёР±РѕС‡РЅС‹Р№ Р»РѕРіРёРЅ
 		$wrongLoginOrPw = 1;
 
 }

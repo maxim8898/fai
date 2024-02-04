@@ -4,21 +4,21 @@ a:7:{s:4:"_var";s:4:"form";s:6:"_error";s:5:"error";s:5:"_main";s:339:"[CSS]
    [SESSF]
    <input type=hidden name=onSubmit value=1>
    <input type=hidden name=act value=forgot>
-  
+
    <table width=100% border=0 cellspacing=0 cellpadding=3>
       [MAIN]
    </table>
-   <br><input type=submit class=lf_submit value='ŒÚÔ‡‚ËÚ¸ Ô‡ÓÎ¸ Ì‡ E-Mail'>
+   <br><input type=submit class=lf_submit value='–û—Ç–ø—Ä–∞–≤–∏—Ç—å –ø–∞—Ä–æ–ª—å –Ω–∞ E-Mail'>
 </form>
 </center>";s:5:"_form";s:236:"<tr>
 <td class=lf_tr width=60%>[DESCRIPTION]</td>
 <td class=lf_tr width=40% <ERROR>bgcolor=#FFCCCC</ERROR>>
-   [INPUT] 
-   <ERROR><center><b><font color=#aa0000>Œ¯Ë·Í‡ ÔË Á‡ÔÓÎÌÂÌËË:</font></b></center>[ERROR]</ERROR>
+   [INPUT]
+   <ERROR><center><b><font color=#aa0000>–û—à–∏–±–∫–∞ –ø—Ä–∏ –∑–∞–ø–æ–ª–Ω–µ–Ω–∏–∏:</font></b></center>[ERROR]</ERROR>
 </td>
 </tr>";s:4:"_css";s:1174:"<STYLE><!--
 
-/* «¿√ŒÀŒ  “¿¡À»÷€ */
+/* –ó–ê–ì–û–õ–û–ö –¢–ê–ë–õ–ò–¶–´ */
 .lf_table {
 BORDER-RIGHT:  #eeeeee 2px outset;
 BORDER-TOP:    #eeeeee 2px outset;
@@ -27,7 +27,7 @@ BORDER-BOTTOM: #eeeeee 2px outset;
 BACKGROUND-COLOR: #D4D0C8;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ */
 .lf_tr {
 BORDER-RIGHT:  #aaaaaa 1px solid;
 BORDER-TOP:    #eeeeee 1px solid;
@@ -36,7 +36,7 @@ BORDER-BOTTOM: #aaaaaa 1px solid;
 font: 75% Tahoma;
 }
 
-/* ‘Œ–Ã¿ ¬¬Œƒ¿ */
+/* –§–û–†–ú–ê –í–í–û–î–ê */
 .lf_input {
 BORDER-RIGHT:  #ffffff 1px solid;
 BORDER-TOP:    #999999 1px solid;
@@ -47,7 +47,7 @@ font: 9pt Tahoma;
 width: 100%;
 }
 
-/* œŒÀ≈ FILE */
+/* –ü–û–õ–ï FILE */
 .lf_file {
 BORDER-RIGHT:  #ffffff 1px outset;
 BORDER-TOP:    #ffffff 1px outset;
@@ -59,14 +59,14 @@ width: 100%;
 }
 
 
-/*  ÕŒœ ¿ "SUBMIT" */
+/* –ö–ù–û–ü–ö–ê "SUBMIT" */
 .lf_submit {
 BORDER-RIGHT:  buttonhighlight 2px outset;
-BORDER-TOP:    buttonhighlight 2px outset; 
+BORDER-TOP:    buttonhighlight 2px outset;
 BORDER-LEFT:   buttonhighlight 2px outset;
 BORDER-BOTTOM: buttonhighlight 2px outset;
 BACKGROUND-COLOR: #e4e0d8;
 width: 30%;
 }
 
---></STYLE>";s:5:"login";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:3:"123";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"15";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:58:"<font color=red>* </font>»Ïˇ Â„ËÒÚ‡ˆËË Ì‡ Ò‡ÈÚÂ (ÀÓ„ËÌ):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"email";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:4:"mail";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:143:"<font color=red>* </font>E-Mail ‡‰ÂÒ:<BR> (ƒ‡ÌÌ˚Â, ‚‚Â‰ÂÌÌ˚Â ‚ ˝ÚÛ ÙÓÏÛ ‰ÓÎÊÌ˚ ÒÓ‚Ô‡‰‡Ú¸ Ò ‰‡ÌÌ˚ÏË ÍÓÚÓ˚Â ¬˚ ‚‚ÂÎË ÔË Â„ËÒÚ‡ˆËË Ì‡ Ò‡ÈÚÂ)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}
+--></STYLE>";s:5:"login";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:3:"123";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"15";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:58:"<font color=red>* </font>–ò–º—è —Ä–µ–≥–∏—Å—Ç—Ä–∞—Ü–∏–∏ –Ω–∞ —Å–∞–π—Ç–µ (–õ–æ–≥–∏–Ω):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"email";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:4:"mail";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:143:"<font color=red>* </font>E-Mail –∞–¥—Ä–µ—Å:<BR> (–î–∞–Ω–Ω—ã–µ, –≤–≤–µ–¥–µ–Ω–Ω—ã–µ –≤ —ç—Ç—É —Ñ–æ—Ä–º—É –¥–æ–ª–∂–Ω—ã —Å–æ–≤–ø–∞–¥–∞—Ç—å —Å –¥–∞–Ω–Ω—ã–º–∏ –∫–æ—Ç–æ—Ä—ã–µ –í—ã –≤–≤–µ–ª–∏ –ø—Ä–∏ —Ä–µ–≥–∏—Å—Ç—Ä–∞—Ü–∏–∏ –Ω–∞ —Å–∞–π—Ç–µ)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}

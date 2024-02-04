@@ -20,7 +20,7 @@ if (isset($form[email]) && $red == 0){
   $res=mysql_query("SELECT * FROM test_osen2010 WHERE email='$form[email]'");
   $tmp=mysql_fetch_assoc($res);
   if (count($tmp) > 1){
-    $error[email][] ='Пилот с таким e-mail уже зарегистрирован';
+    $error[email][] ='РџРёР»РѕС‚ СЃ С‚Р°РєРёРј e-mail СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ';
   }
 }
 
@@ -28,12 +28,12 @@ $ip = getRealIpAddr(); session_register("ip");
 
 
 if ( isset($form[cod]) && $_SESSION[cod] <> md5($form[cod])){
-  $error[cod][] = 'Ошибочный код подтверждения';
+  $error[cod][] = 'РћС€РёР±РѕС‡РЅС‹Р№ РєРѕРґ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ';
 }
 
 define("loginform",1); include_once("_fform.php");
-$buf=loginform_show("./fform/_test_osen2010.lf"); //ВНИМАНИЕ: ТУТ НУЖНО УКАЗАТЬ ИМЯ ФОРМЫ
-	
+$buf=loginform_show("./fform/_test_osen2010.lf"); //Р’РќРРњРђРќРР•: РўРЈРў РќРЈР–РќРћ РЈРљРђР—РђРўР¬ РРњРЇ Р¤РћР РњР«
+
 if (isset($onSubmit) && !isset($error)){
          $datereg=time();
 	$form[email] = strtolower($form[email]);
@@ -70,7 +70,7 @@ if (isset($onSubmit) && !isset($error)){
 //echo"$query <br>";
 
 
-	$result = MYSQL_QUERY($query); 
+	$result = MYSQL_QUERY($query);
 //echo"<br>RESULT=$result";
 
 

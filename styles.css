@@ -1,136 +1,146 @@
 /* Ok */
 .ok {
-font: 90% Tahoma;
+	font: 90% Tahoma;
 }
 
-.cat
-{ font-size:16px;
-}
-P{
-  Font-Size: 14px;
-  padding-left : 5px;
-  padding-right : 5px;
-  text-indent:20pt;
-  margin-top:0.0pt;
-  margin-bottom:5.0pt;
-  LETTER-SPACING: 1px;
-  text-align : justify;
+.cat {
+	font-size: 16px;
 }
 
-A      {
-	Font-Family: Tahoma; 
-	Font-Size: 12px; 
+P {
+	Font-Size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-indent: 20pt;
+	margin-top: 0.0pt;
+	margin-bottom: 5.0pt;
+	LETTER-SPACING: 1px;
+	text-align: justify;
+}
+
+A {
+	Font-Family: Tahoma;
+	Font-Size: 12px;
 }
 
 A:link {
-	Color:#000000;
+	Color: #000000;
 }
 
 A:visited {
-	Color:#000000; 
+	Color: #000000;
 }
 
 A:hover {
-	Color:#000000; 
+	Color: #000000;
 }
+
 A:active {
-	Color: #000000; 
+	Color: #000000;
 }
 
 table {
-	Font-Size: 12px; 
+	Font-Size: 12px;
 	Text-Align: Left;
 }
 
-.main { 
-	Font-Family: Tahoma; 
-	Font-Size: 12px; 
-	Font-Weight: Bold; 
+.main {
+	Font-Family: Tahoma;
+	Font-Size: 12px;
+	Font-Weight: Bold;
 }
+
 body {
-	Font-Family: Tahoma; 
-	Font-Size: 12px; 
-	Margin: 0; 
+	Font-Family: Tahoma;
+	Font-Size: 12px;
+	Margin: 0;
 	Padding-Left: 3px;
 }
-h1   {
-	Font-Family: Tahoma; 
-	Font-Size: 16px; 
+
+h1 {
+	Font-Family: Tahoma;
+	Font-Size: 16px;
 }
-h2   {
-	Font-Family: Tahoma; 
-	Font-Size: 15px; 
+
+h2 {
+	Font-Family: Tahoma;
+	Font-Size: 15px;
 }
-h3   {
-	Font-Family: Tahoma; 
-	Font-Size: 14px; 
+
+h3 {
+	Font-Family: Tahoma;
+	Font-Size: 14px;
 }
 
 
-/* «¿√ŒÀŒ  “¿¡À»÷€ 1 */
+/* –ó–ê–ì–û–õ–û–ö –¢–ê–ë–õ–ò–¶–´ 1 */
 .lf_table {
-BORDER-RIGHT:  #ffffff 2px outset;
-BORDER-TOP:    #ffffff 2px outset;
-BORDER-LEFT:   #ffffff 2px outset;
-BORDER-BOTTOM: #ffffff 2px outset;
-BACKGROUND-COLOR: #D4D0C8;
+	BORDER-RIGHT: #ffffff 2px outset;
+	BORDER-TOP: #ffffff 2px outset;
+	BORDER-LEFT: #ffffff 2px outset;
+	BORDER-BOTTOM: #ffffff 2px outset;
+	BACKGROUND-COLOR: #D4D0C8;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ 1 */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ 1 */
 .lf_tr {
-BORDER-RIGHT:  #eeeeee 1px solid;
-BORDER-TOP:    #ffffff 1px solid;
-BORDER-LEFT:   #ffffff 1px solid;
-BORDER-BOTTOM: #eeeeee 1px solid;
-font: 12px Tahoma;
+	BORDER-RIGHT: #eeeeee 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-BOTTOM: #eeeeee 1px solid;
+	font: 12px Tahoma;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ 2 */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ 2 */
 .lf_tt {
-BORDER-TOP:    #ffffff 1px solid;
-BORDER-BOTTOM: #eeeeee 1px solid;
-font: 12px Tahoma;
+	BORDER-TOP: #ffffff 1px solid;
+	BORDER-BOTTOM: #eeeeee 1px solid;
+	font: 12px Tahoma;
 }
 
-/* ﬂ◊≈… ¿ “¿¡À»÷€ 3 */
+/* –Ø–ß–ï–ô–ö–ê –¢–ê–ë–õ–ò–¶–´ 3 */
 .lf_rr {
-BORDER-RIGHT:  #bbbbbb 1px solid;
-font: 12px Tahoma;
+	BORDER-RIGHT: #bbbbbb 1px solid;
+	font: 12px Tahoma;
 }
 
 
-/* ‘Œ–Ã¿ ¬¬Œƒ¿ */
+/* –§–û–†–ú–ê –í–í–û–î–ê */
 .lf_input {
-BORDER-RIGHT:  #ffffff 1px solid;
-BORDER-TOP:    #999999 1px solid;
-BORDER-LEFT:   #999999 1px solid;
-BORDER-BOTTOM: #ffffff 1px solid;
-BACKGROUND-COLOR: #e4e0d8;
-font: 12px Tahoma;
-width: 100%;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #999999 1px solid;
+	BORDER-LEFT: #999999 1px solid;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BACKGROUND-COLOR: #e4e0d8;
+	font: 12px Tahoma;
+	width: 100%;
 }
 
-/* ——€À ¿ */
+/* –°–°–´–õ–ö–ê */
 .AA {
 	TEXT-DECORATION: none
 }
+
 .AA.visited {
 	TEXT-DECORATION: none
 }
+
 .AA:hover {
 	TEXT-DECORATION: underline;
 }
 
 
-/* ——€À ¿ */
+/* –°–°–´–õ–ö–ê */
 .AAM {
 	Font-Size: 14px;
 	TEXT-DECORATION: none
 }
+
 .AAM.visited {
 	Font-Size: 14px;
 	TEXT-DECORATION: none
 }
+
 .AAM:hover {
 	Font-Size: 14px;
 	TEXT-DECORATION: none;
@@ -138,15 +148,21 @@ width: 100%;
 
 
 
- /* Font Definitions */
-p.a, li.a, div.a, p.2, li.2, div.2
-	{margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-indent:14.2pt;
-	text-autospace:none;
-	font-size:14.0pt;
-	font-family:"Tahoma";}
+/* Font Definitions */
+p.a,
+li.a,
+div.a,
+p.2,
+li.2,
+div.2 {
+	margin-top: 6.0pt;
+	margin-right: 0cm;
+	margin-bottom: 0cm;
+	margin-left: 0cm;
+	margin-bottom: .0001pt;
+	text-align: justify;
+	text-indent: 14.2pt;
+	text-autospace: none;
+	font-size: 14.0pt;
+	font-family: "Tahoma";
+}

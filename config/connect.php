@@ -1,7 +1,7 @@
 <?
-	define('DB_HOST', 'localhost');		// õîñò
-	define('DB_NAME', 'irdzzyyj_f3a');		// èìÿ ÁÄ
-	define('DB_USER', 'irdzzyyj_f3a');		// èìÿ ïîäüçîâàòåëÿ ÁÄ
-	define('DB_PASS', '65432154321');		// ïàðîëü ê ÁÄ
-	define('ADMIN_LOGIN', 'Allin');		// Ëîãèí àäìèíèñòðàòîðà
+	define('DB_HOST', 'localhost');		// Ñ…Ð¾ÑÑ‚
+	define('DB_NAME', 'irdzzyyj_f3a');		// Ð¸Ð¼Ñ Ð‘Ð”
+	define('DB_USER', 'irdzzyyj_f3a');		// Ð¸Ð¼Ñ Ð¿Ð¾Ð´ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð‘Ð”
+	define('DB_PASS', '65432154321');		// Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ðº Ð‘Ð”
+	define('ADMIN_LOGIN', 'Allin');		// Ð›Ð¾Ð³Ð¸Ð½ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð°
 ?>

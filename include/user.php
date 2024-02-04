@@ -1,21 +1,21 @@
 <?
-//Форма авторизации на сайте
+//Р¤РѕСЂРјР° Р°РІС‚РѕСЂРёР·Р°С†РёРё РЅР° СЃР°Р№С‚Рµ
 if (!isset($login)) {
 $out_usr = "
 <table border=0 width=100%>
 <form action='index.php' method=post>
 <tr>
-	<td align=left>Логин: </td>
+	<td align=left>Р›РѕРіРёРЅ: </td>
 	<td><input type='text' name='user_login' size=6></td>
         <td align=right>&nbsp;</td>
 </tr><tr>
-	<td align=left>Пароль: </td>
+	<td align=left>РџР°СЂРѕР»СЊ: </td>
 	<td><input name='user_pw' type='password' size=6></td>
         <td align=right><input type=hidden name=enter value='ok'><INPUT type='image' onClick='submit();' src='./img/ok.gif'></td>
 </tr>
 
 <tr>
-	<td colspan=3><INPUT type='checkbox' name='save'> Запомнить меня</td>
+	<td colspan=3><INPUT type='checkbox' name='save'> Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ</td>
 </tr>
 	";
 	if (isset($PID)) $out_usr .= "<input type=hidden name=PID value='$PID'>";
@@ -24,8 +24,8 @@ $out_usr = "
 	if (isset($DID)) $out_usr .= "<input type=hidden name=DID value='$DID'>";
 	$out_usr .= "
 </tr><tr>
-	<td colspan=2><font size=2><a href='index.php?act=freg'>Регистрация</a></font></td>
-        <td align=right><font size=2><a href='index.php?act=forgot'>забыли?</a></font></td>
+	<td colspan=2><font size=2><a href='index.php?act=freg'>Р РµРіРёСЃС‚СЂР°С†РёСЏ</a></font></td>
+        <td align=right><font size=2><a href='index.php?act=forgot'>Р·Р°Р±С‹Р»Рё?</a></font></td>
 </tr>
 </form>
 </table>
@@ -34,14 +34,14 @@ $out_usr = "
 } else {
   $out_usr = "
   <table>
-  <tr><td>Пользователь: <b>$nick</b></td></tr>
+  <tr><td>РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: <b>$nick</b></td></tr>
   ";
   if (isset($login) && $level > 70) {
-	$out_usr .= "<tr><td><a href='./admiin/admin.php' target=main><font color=red>АДМИНИСТРИРОВАНИЕ</font></a></td></tr>
-	";	
+	$out_usr .= "<tr><td><a href='./admiin/admin.php' target=main><font color=red>РђР”РњРРќРРЎРўР РР РћР’РђРќРР•</font></a></td></tr>
+	";
   }
-  $out_usr .= "<tr><td><a href='index.php?act=fuser'>Изменить анкету</a></td></tr>
-  <tr><td><a href='index.php?logout=yes'>Завершить сеанс</a></td></tr>
+  $out_usr .= "<tr><td><a href='index.php?act=fuser'>РР·РјРµРЅРёС‚СЊ Р°РЅРєРµС‚Сѓ</a></td></tr>
+  <tr><td><a href='index.php?logout=yes'>Р—Р°РІРµСЂС€РёС‚СЊ СЃРµР°РЅСЃ</a></td></tr>
   </table>
   ";
 }

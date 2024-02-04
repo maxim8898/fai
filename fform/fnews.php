@@ -5,7 +5,7 @@ if (isset($Cancel)){
 }
 
 
-if (!isset($form)){  // Ïåğâîíà÷àëüíûå äàííûå
+if (!isset($form)){  // ĞŸĞµÑ€Ğ²Ğ¾Ğ½Ğ°Ñ‡Ğ°Ğ»ÑŒĞ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ
 	$res=mysql_query("SELECT * FROM ok_news WHERE NID='$NID'");
 	$form=mysql_fetch_assoc($res); $lf_default = $form[parent];
 }
@@ -16,7 +16,7 @@ if ($form[date][2]<>'.' || $form[date][5] <> '.')
 $image1="../pictures/n_$form[NID].gif";
 if (file_exists($image1))
 	$form[image1]="<img src=$image1 width=60>";
-else  $form[image1]="ÈÇÎÁĞÀÆÅÍÈÅ ÍÅ ÇÀÃĞÓÆÅÍÎ";
+else  $form[image1]="Ğ˜Ğ—ĞĞ‘Ğ ĞĞ–Ğ•ĞĞ˜Ğ• ĞĞ• Ğ—ĞĞ“Ğ Ğ£Ğ–Ğ•ĞĞ";
 
 
 //------------------------------------------
@@ -28,7 +28,7 @@ copy($form[upload], "../pictures/n_$form[NID].gif");
 
 
 define("loginform",1); include_once("../fform/_fform.php");
-$buf=loginform_show("../fform/_news.lf"); //ÂÍÈÌÀÍÈÅ: ÒÓÒ ÍÓÆÍÎ ÓÊÀÇÀÒÜ ÈÌß ÔÎĞÌÛ
+$buf=loginform_show("../fform/_news.lf"); //Ğ’ĞĞ˜ĞœĞĞĞ˜Ğ•: Ğ¢Ğ£Ğ¢ ĞĞ£Ğ–ĞĞ Ğ£ĞšĞĞ—ĞĞ¢Ğ¬ Ğ˜ĞœĞ¯ Ğ¤ĞĞ ĞœĞ«
 
 if (isset($onSubmit) && !isset($error)){
 	$date = $form[date];
@@ -42,7 +42,7 @@ if (isset($onSubmit) && !isset($error)){
 		PID='$form[PID]',
 		visible='$form[visible]'
 	WHERE NID='$form[NID]'";
-	$result = MYSQL_QUERY($query) or die (mysql_error()); 
+	$result = MYSQL_QUERY($query) or die (mysql_error());
 	header("Location: anews.php");
 }
 ?>

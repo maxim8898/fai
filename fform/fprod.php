@@ -4,25 +4,25 @@ if (isset($Cancel)){
   exit(header("Location: acateg.php?CID=$form[CID]"));
 }
 
-// Ï‡ÒÒË‚ ‰Îˇ ÔÓÎˇ select
-$lf_value[]=0; $lf_textval[]=" ÓÂÌ¸";
+// –º–∞—Å—Å–∏–≤ –¥–ª—è –ø–æ–ª—è select
+$lf_value[]=0; $lf_textval[]="–ö–æ—Ä–µ–Ω—å";
 $r=mysql_query("SELECT CID, name, tip, parent FROM ok_categories WHERE tip <> 3 order by parent, pnum, tip");
 while($Row=mysql_fetch_row($r)) {
-  $lf_value[]=$Row[0]; $lf_textval[]=$Row[1];  
+  $lf_value[]=$Row[0]; $lf_textval[]=$Row[1];
 }
-if (!isset($form)){  // œÂ‚ÓÌ‡˜‡Î¸Ì˚Â ‰‡ÌÌ˚Â
+if (!isset($form)){  // –ü–µ—Ä–≤–æ–Ω–∞—á–∞–ª—å–Ω—ã–µ –¥–∞–Ω–Ω—ã–µ
 	$res=mysql_query("SELECT * FROM ok_products WHERE PID='$PID'");
 	$form=mysql_fetch_assoc($res); $lf_default = $form[CID];
 }else{
-  if (rtrim($form[name])=="") $error[name][]='ÔÓÎÂ ÌÂ Á‡ÔÓÎÌÂÌo';
+  if (rtrim($form[name])=="") $error[name][]='–ø–æ–ª–µ –Ω–µ –∑–∞–ø–æ–ª–Ω–µ–Ωo';
 }
 
 
 $icon="../pictures/i_$form[PID].gif";
-if (file_exists($icon)) $form[icon]="<img src=$icon width=100>"; else  $form[icon]="»«Œ¡–¿∆≈Õ»≈ Õ≈ «¿√–”∆≈ÕŒ $icon";
+if (file_exists($icon)) $form[icon]="<img src=$icon width=100>"; else  $form[icon]="–ò–ó–û–ë–†–ê–ñ–ï–ù–ò–ï –ù–ï –ó–ê–ì–†–£–ñ–ï–ù–û $icon";
 
-$picture="../pictures/p_$form[PID].gif"; 
-if (file_exists($picture)) $form[picture]="<img src=$picture width=300>";else  $form[picture]="»«Œ¡–¿∆≈Õ»≈ Õ≈ «¿√–”∆≈ÕŒ $picture";
+$picture="../pictures/p_$form[PID].gif";
+if (file_exists($picture)) $form[picture]="<img src=$picture width=300>";else  $form[picture]="–ò–ó–û–ë–†–ê–ñ–ï–ù–ò–ï –ù–ï –ó–ê–ì–†–£–ñ–ï–ù–û $picture";
 
 //------------------------------------------
 if ($form[upload1]<>''){
@@ -39,7 +39,7 @@ copy($form[upload2], "../pictures/p_$form[PID].gif");
 
 
 define("loginform",1); include_once("_fform.php");
-$buf=loginform_show("../fform/_prod.lf"); //¬Õ»Ã¿Õ»≈: “”“ Õ”∆ÕŒ ” ¿«¿“‹ »Ãﬂ ‘Œ–Ã€
+$buf=loginform_show("../fform/_prod.lf"); //–í–ù–ò–ú–ê–ù–ò–ï: –¢–£–¢ –ù–£–ñ–ù–û –£–ö–ê–ó–ê–¢–¨ –ò–ú–Ø –§–û–†–ú–´
 
 if (isset($onSubmit) && !isset($error)){
 	//$form[description] = str_replace("\"", "\\\"", $form[description]); $form[description] = str_replace("'", "\'", $form[description]);
@@ -48,17 +48,17 @@ if (isset($onSubmit) && !isset($error)){
 	SET 	CID='$form[CID]',
 		pnum='$form[pnum]',
 		name='$form[name]',
-		description='$form[description]', 
-		info='$form[info]', 
-		show_special='$form[show_special]', 
+		description='$form[description]',
+		info='$form[info]',
+		show_special='$form[show_special]',
 		price='$form[price]',
-		defaultico='$form[defaultico]',	
+		defaultico='$form[defaultico]',
 		old_price='$form[old_price]',
 		href_url='$form[href_url]',
-		
+
 		visible='$form[visible]'
 	WHERE PID='$form[PID]'";
-	$result = MYSQL_QUERY($query); 
+	$result = MYSQL_QUERY($query);
 header("Location: acateg.php?CID=$form[CID]");
 }
 ?>

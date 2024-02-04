@@ -20,4 +20,4 @@ for($i=0;$i<7;$i++){
 imagettftext($img, 25, 10, 10, 35, $colours['black'], $font, $content);
 imagepng($img);
 imagedestroy($img);
-?> 
+?>

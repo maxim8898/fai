@@ -3,15 +3,15 @@ if (!isset($login)) exit(header("Location: ../index.php?error=1"));
 if (isset($Cancel)){
   exit(header("Location: index.php?FID=$CID"));
 }
-if (!isset($form)){  // œÂ‚ÓÌ‡˜‡Î¸Ì˚Â ‰‡ÌÌ˚Â
-  $form[CID] = $CID; $form[visible] = 1; 
+if (!isset($form)){  // –ü–µ—Ä–≤–æ–Ω–∞—á–∞–ª—å–Ω—ã–µ –¥–∞–Ω–Ω—ã–µ
+  $form[CID] = $CID; $form[visible] = 1;
 }else{
-  if (rtrim($form[name])=="") $error[name][]='ÔÓÎÂ ÌÂ Á‡ÔÓÎÌÂÌo';
-  if (rtrim($form[message])=="") $error[message][]='ÔÓÎÂ ÌÂ Á‡ÔÓÎÌÂÌo';
+  if (rtrim($form[name])=="") $error[name][]='–ø–æ–ª–µ –Ω–µ –∑–∞–ø–æ–ª–Ω–µ–Ωo';
+  if (rtrim($form[message])=="") $error[message][]='–ø–æ–ª–µ –Ω–µ –∑–∞–ø–æ–ª–Ω–µ–Ωo';
 }
 
 define("loginform",1); include_once("_fform.php");
-$buf=loginform_show("fform/_newforum.lf"); //¬Õ»Ã¿Õ»≈: “”“ Õ”∆ÕŒ ” ¿«¿“‹ »Ãﬂ ‘Œ–Ã€
+$buf=loginform_show("fform/_newforum.lf"); //–í–ù–ò–ú–ê–ù–ò–ï: –¢–£–¢ –ù–£–ñ–ù–û –£–ö–ê–ó–ê–¢–¨ –ò–ú–Ø –§–û–†–ú–´
 
 if (isset($onSubmit) && !isset($error)){
 	$time = time();
@@ -21,18 +21,18 @@ if (isset($onSubmit) && !isset($error)){
 	$form[message] = str_replace ("[i]", "<i>", $form[message]); $form[message] = str_replace ("[/i]", "</i>", $form[message]);
 	$form[message] = str_replace ("[u]", "<u>", $form[message]); $form[message] = str_replace ("[/u]", "</u>", $form[message]);
 	$form[message] = str_replace ("[center]", "<center>", $form[message]); $form[message] = str_replace ("[/center]", "</center>", $form[message]);
-	$form[message] = str_replace ("[br]", "<br>", $form[message]); 
+	$form[message] = str_replace ("[br]", "<br>", $form[message]);
 
 	$query = "INSERT INTO ok_products
 	SET 	CID='$form[CID]',
 		name='$form[name]',
 		description='$form[description]',
-		visible='$form[visible]', 
+		visible='$form[visible]',
 		date='$time',
 	        lasttime='$time',
-		lastnick='$nick', 
+		lastnick='$nick',
 		author='$nick'";
-  	$result = MYSQL_QUERY($query); 
+  	$result = MYSQL_QUERY($query);
 	$PID =  mysql_insert_id();
 
 	$query = "INSERT INTO ok_discussions
@@ -42,13 +42,13 @@ if (isset($onSubmit) && !isset($error)){
 		time='$time',
 	        topic='$form[name]',
 		body='$form[message]'";
-  	$result = MYSQL_QUERY($query); 
+  	$result = MYSQL_QUERY($query);
 
 	$query = "UPDATE ok_categories
 	SET 	lastnick='$nick',
 		lasttime='$time'
-		where CID=$form[CID]"; 
-	$result = MYSQL_QUERY($query); 
+		where CID=$form[CID]";
+	$result = MYSQL_QUERY($query);
 
   header("Location: index.php?DID=$PID");
 }

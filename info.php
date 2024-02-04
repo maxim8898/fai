@@ -21,8 +21,8 @@ function  geo_info($ip)
 
 
 
-$city = geo_info("213.180.204.8"); 
-echo "Город - $city";
+$city = geo_info("213.180.204.8");
+echo "Р“РѕСЂРѕРґ - $city";
 
 
 ?>

@@ -1,6 +1,6 @@
 <?
 error_reporting(0);
-// Óïðàâëåíèå ãëàâíîé ïàíåëüþ
+// Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ Ð¿Ð°Ð½ÐµÐ»ÑŒÑŽ
 session_start();
 $login = $_SESSION['login'];
 $pass = $_SESSION['pass'];
@@ -19,15 +19,15 @@ $searchstring = mysql_real_escape_string($searchstring);
 
 extract($_POST); extract($_GET);
 
-include_once("config/connect.php"); include_once("config/config.php"); 
-include_once("include/function.php"); 
-//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Îøèáêà ïîäêëþ÷åíèÿ ê MySQL"); mysql_select_db(DB_NAME) or die("Îøèáêà ïîäêëþ÷åíèÿ ê ÁÄ");	
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ñåðâèñ âðåìåííî íåäîñòóïåí"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Ñåðâèñ âðåìåííî íåäîñòóïåí");	
+include_once("config/connect.php"); include_once("config/config.php");
+include_once("include/function.php");
+//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ðº MySQL"); mysql_select_db(DB_NAME) or die("ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ðº Ð‘Ð”");
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ð¡ÐµÑ€Ð²Ð¸Ñ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Ð¡ÐµÑ€Ð²Ð¸Ñ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½");
 
 include_once("include/level.php");
-$output = implode("",file("templ/print.html")); 
+$output = implode("",file("templ/print.html"));
 
-$out = ""; $out1 = "Èíôîðìàöèÿ";
+$out = ""; $out1 = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ";
 
 include_once("include/main.php");
 $title = str_replace("<b>", "", $title);

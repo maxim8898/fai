@@ -1,26 +1,26 @@
 <?
-$localtime = 3;			# ïîïðàâêà âðåìåíè â ÷àñàõ
-$obnov = 5;			# âðåìÿ ðåôðåøà â ñåê.
-$col1 = "#ffffff";		# öâåò ôîíà îáùàêà
-$col2 = "#ddeeff";		# öâåò ôîíà ïðèâàòà
-$col3 = "#eaeaea";		# öâåò ôîíà îáðàìëÿþùèõ ôðåéìîâ
-$col4 = "#afc6db";		# öâåò ôîíà áëîêîâ
+$localtime = 3;			# Ð¿Ð¾Ð¿Ñ€Ð°Ð²ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð² Ñ‡Ð°ÑÐ°Ñ…
+$obnov = 5;			# Ð²Ñ€ÐµÐ¼Ñ Ñ€ÐµÑ„Ñ€ÐµÑˆÐ° Ð² ÑÐµÐº.
+$col1 = "#ffffff";		# Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð¾Ð±Ñ‰Ð°ÐºÐ°
+$col2 = "#ddeeff";		# Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð°
+$col3 = "#eaeaea";		# Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð¾Ð±Ñ€Ð°Ð¼Ð»ÑÑŽÑ‰Ð¸Ñ… Ñ„Ñ€ÐµÐ¹Ð¼Ð¾Ð²
+$col4 = "#afc6db";		# Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð±Ð»Ð¾ÐºÐ¾Ð²
 
-$email = "admin@f3a-by.com";    # e-mail àäìèíèñòðàòîðà
-$mainurl = "f3a-by.com";		# ãëàâíàÿ ñòðàíèöû (áåç http:// è www.)
-$sitename ="FAI F3A â Áåëàðóñè";	# Íàçâàíèå ñàéòà
-$title ="= FAI F3A â Áåëàðóñè =";
-$descriptions="FAI F3A â Áåëàðóñè";
+$email = "admin@f3a-by.com";    # e-mail Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð°
+$mainurl = "f3a-by.com";		# Ð³Ð»Ð°Ð²Ð½Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ (Ð±ÐµÐ· http:// Ð¸ www.)
+$sitename ="FAI F3A Ð² Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ¸";	# ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ°Ð¹Ñ‚Ð°
+$title ="= FAI F3A Ð² Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ¸ =";
+$descriptions="FAI F3A Ð² Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ¸";
 $keywords="";
 
 $ordernews = 0;
-         $main_color = "eaeff4"; 
+         $main_color = "eaeff4";
 	$dark_color = "9cb4ca";
 	$middle_color = "afc6db";
 	$light_color = "f5f5ff";
 
 //	$dark_color = "#6e94b7";
-//	$middle_color = "#6bfee4";  
+//	$middle_color = "#6bfee4";
 //	$light_color = "#ffffcc";
 
 ?>

@@ -3,8 +3,8 @@ $shopping = 1; $out=''; $out2='';
 if (isset($login) && $shopping){
 	$out = implode("",file("templ/shopping.tpl"));
 
-	$out2 = "<input type=text size='22' name=gc value='òîâàðîâ'><br>
-		 <input type=text size='22' name=ca value='íà ñóììó'>";
+	$out2 = "<input type=text size='22' name=gc value='Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²'><br>
+		 <input type=text size='22' name=ca value='Ð½Ð° ÑÑƒÐ¼Ð¼Ñƒ'>";
 
 
 }

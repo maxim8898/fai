@@ -9,10 +9,10 @@ class RSS {
 	}
 	function display($rss_file = 'blah', $rss_items = 'blah', $rss_template_string = 'blah', $rss_template_file = 'blah', $rss_use_cache= 'blah', $rss_cache_dir = 'blah', $rss_refresh_time = 'blah', $rss_echo = 'blah', $rss_debug = 'blah') {
 	global $rss_template;
-	   $rss_items = $this->items; $rss_template_file = $this->template_file; 
+	   $rss_items = $this->items; $rss_template_file = $this->template_file;
 	   $f = fopen($rss_file,'r');
-	   if ($f=='') 
-		$rss_template="В настоящее время данный ресурс недоступен. Повторите попытку через несколько минут.";
+	   if ($f=='')
+		$rss_template="Р’ РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ РґР°РЅРЅС‹Р№ СЂРµСЃСѓСЂСЃ РЅРµРґРѕСЃС‚СѓРїРµРЅ. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚.";
 	   else{
 		while (!feof($f)){$content .= fgets($f, 4096);}
 		fclose($f);
