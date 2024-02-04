@@ -1,0 +1,72 @@
+a:24:{s:4:"_var";s:4:"form";s:6:"_error";s:5:"error";s:5:"_main";s:417:"[CSS]
+<center>
+<form action='' method=post enctype=multipart/form-data>
+   [SESSF]
+   <input type=hidden name=onSubmit value=1>
+   <input type=hidden name=act value=ftest_osen2010>
+   <table width=100% border=0 cellspacing=0 cellpadding=3>
+      [MAIN]
+   </table>
+
+   <br><input type=submit class=lf_submit value=Сохранить> <input type=submit class=lf_submit name=Cancel value=Отменить>
+</form>
+</center>";s:5:"_form";s:236:"<tr>
+<td class=lf_tr width=50%>[DESCRIPTION]</td>
+<td class=lf_tr width=50% <ERROR>bgcolor=#FFCCCC</ERROR>>
+   [INPUT] 
+   <ERROR><center><b><font color=#aa0000>Ошибка при заполнении:</font></b></center>[ERROR]</ERROR>
+</td>
+</tr>";s:4:"_css";s:3221:"<STYLE><!--
+
+/* ЗАГОЛОК ТАБЛИЦЫ */
+.lf_table {
+BORDER-RIGHT:  #eeeeee 2px outset;
+BORDER-TOP:    #eeeeee 2px outset;
+BORDER-LEFT:   #eeeeee 2px outset;
+BORDER-BOTTOM: #eeeeee 2px outset;
+BACKGROUND-COLOR: #D4D0C8;
+}
+
+/* ЯЧЕЙКА ТАБЛИЦЫ */
+.lf_tr {
+BORDER-RIGHT:  #aaaaaa 1px solid;
+BORDER-TOP:    #eeeeee 1px solid;
+BORDER-LEFT:   #eeeeee 1px solid;
+BORDER-BOTTOM: #aaaaaa 1px solid;
+font: 12px Tahoma;
+}
+
+/* ФОРМА ВВОДА */
+.lf_input {
+BORDER-RIGHT:  #ffffff 1px solid;
+BORDER-TOP:    #999999 1px solid;
+BORDER-LEFT:   #999999 1px solid;
+BORDER-BOTTOM: #ffffff 1px solid;
+BACKGROUND-COLOR: #e4e0d8;
+font: 9pt Tahoma;
+width: 100%;
+}
+
+/* ПОЛЕ FILE */
+.lf_file {
+BORDER-RIGHT:  #ffffff 1px outset;
+BORDER-TOP:    #ffffff 1px outset;
+BORDER-LEFT:   #ffffff 1px outset;
+BORDER-BOTTOM: #ffffff 1px outset;
+BACKGROUND-COLOR: #e4e0d8;
+font: 9pt Tahoma;
+width: 100%;
+}
+
+
+/* КНОПКА \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SUBMIT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" */
+.lf_submit {
+BORDER-RIGHT:  buttonhighlight 2px outset;
+BORDER-TOP:    buttonhighlight 2px outset; 
+BORDER-LEFT:   buttonhighlight 2px outset;
+BORDER-BOTTOM: buttonhighlight 2px outset;
+BACKGROUND-COLOR: #e4e0d8;
+width: 30%;
+}
+
+--></STYLE>";s:3:"fam";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"15";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:34:"Фамилия:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"name";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:30:"Имя:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:2:"ot";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"30";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:9:"Отчество:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"strana";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"20";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:33:"Страна:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"gorod";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:42:"Город / Команда:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"razrad";a:22:{s:4:"type";s:6:"select";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:29:"--б/р--1--2--3--КМС--МС--МСМК";s:7:"textval";s:29:"--б/р--1--2--3--КМС--МС--МСМК";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:18:"Спортивный разряд:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"komplex";a:22:{s:4:"type";s:6:"select";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:22:"--P-15--A-14--National";s:7:"textval";s:22:"--P-15--A-14--National";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:46:"Пилотажный комплекс:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"model";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"50";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:16:"Название модели:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:10:"motor_name";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"50";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:19:"Название двигателя:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:2:"tx";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:19:"Модель передатчика:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"kanal";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:54:"Частота (канал) передатчика:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"date_r";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"20";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:14:"Дата рождения:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"hotel";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:1:"1";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:48:"Бронирование гостиницы: (указать кол-во человек)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"food";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:1:"1";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:40:"Питание в поле: (указать кол-во человек)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:6:"razmer";a:22:{s:4:"type";s:6:"select";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:21:"--M--L--XL--XXL--XXXL";s:7:"textval";s:21:"--M--L--XL--XXL--XXXL";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"10";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:14:"Размер одежды:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"email";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"50";s:5:"check";s:4:"mail";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:33:"E-Mail:<font color=red> * </font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"phone";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:32:"Телефон (контактная информация):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"info";a:22:{s:4:"type";s:8:"textarea";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:38:"Дополнительная информация (пожелания):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:3:"cod";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:78:"Код подтверждения:<font color=red> * </font> <img src=../include/imagecod.php>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}

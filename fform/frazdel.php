@@ -1,0 +1,37 @@
+<?
+include("../include/check.php");
+if (isset($Cancel)){
+  exit(header("Location: aforum.php?C=$form[parent]"));
+}
+if (!isset($form)){  // Ïåðâîíà÷àëüíûå äàííûå
+	$res=mysql_query("SELECT * FROM ok_categories WHERE CID='$CID'");
+	$form=mysql_fetch_assoc($res); 
+}else{
+  if (rtrim($form[name])=="") $error[name][]='ïîëå íå çàïîëíåío';
+}
+
+
+// ìàññèâ äëÿ ïîëÿ select
+$lf_value[]=0; $lf_textval[]="Êîðåíü"; $lf_default = 0;
+
+define("loginform",1); include_once("_fform.php");
+$buf=loginform_show("../fform/_forum.lf"); //ÂÍÈÌÀÍÈÅ: ÒÓÒ ÍÓÆÍÎ ÓÊÀÇÀÒÜ ÈÌß ÔÎÐÌÛ
+
+if (isset($onSubmit) && !isset($error)){
+  if (isset($New)){
+echo "Äîáàâëåíèå CID=$form[CID]";
+  }else{
+	$form[description] = str_replace("\"", "\\\"", $form[description]); $form[description] = str_replace("'", "\'", $form[description]);
+	$query ="UPDATE ok_categories
+	SET 	tip=3,
+		name='$form[name]', 
+		parent=0, 
+		description='$form[description]', 
+		discussion='$form[discussion]', 
+		visible='$form[visible]'
+	WHERE CID='$form[CID]'";
+  }	
+	$result = MYSQL_QUERY($query); 
+header("Location: aforum.php?C=$form[parent]");
+}
+?>

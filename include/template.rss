@@ -1,0 +1,10 @@
+<ul>
+<div style='text-align : justify;'>
+{rss_items}
+<li>
+<font size=-1>{$rss_item_pubdate}</font><a href="{$rss_item_link}" target="_new">{$rss_item_title}</a>
+<p>{$rss_item_description}</p>
+</li>
+{/rss_items}
+</div>
+</ul>

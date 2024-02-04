@@ -1,0 +1,74 @@
+a:22:{s:3:"CID";a:22:{s:4:"type";s:6:"select";s:4:"need";s:1:"0";s:7:"default";s:22:"<VAR>$lf_default</VAR>";s:5:"value";s:20:"<VAR>$lf_value</VAR>";s:7:"textval";s:22:"<VAR>$lf_textval</VAR>";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:16:"Верхний уровень:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:3:"PID";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"0";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:60:"Идентификатор продукта: <font color=red> Не изменять!</font>";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"name";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:3:"255";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:13:"Наименование:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"pnum";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:29:"Порядковый номер в категории:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"date";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:2:"10";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:5:"Дата:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"_var";s:4:"form";s:6:"_error";s:5:"error";s:5:"_main";s:414:"[CSS]
+<center>
+<form action='' method=post enctype=multipart/form-data>
+   [SESSF]
+   <input type=hidden name=onSubmit value=1>
+   <input type=hidden name=Pedit value=1>
+     
+   <table width=100% border=0 cellspacing=0 cellpadding=3>
+      [MAIN]
+   </table>
+   <br><input type=submit class=lf_submit value=Сохранить>  <input type=submit class=lf_submit name=Cancel value=Отменить>
+
+</form>
+</center>";s:5:"_form";s:236:"<tr>
+<td class=lf_tr width=50%>[DESCRIPTION]</td>
+<td class=lf_tr width=50% <ERROR>bgcolor=#FFCCCC</ERROR>>
+   [INPUT] 
+   <ERROR><center><b><font color=#aa0000>Ошибка при заполнении:</font></b></center>[ERROR]</ERROR>
+</td>
+</tr>";s:4:"_css";s:1174:"<STYLE><!--
+
+/* ЗАГОЛОК ТАБЛИЦЫ */
+.lf_table {
+BORDER-RIGHT:  #eeeeee 2px outset;
+BORDER-TOP:    #eeeeee 2px outset;
+BORDER-LEFT:   #eeeeee 2px outset;
+BORDER-BOTTOM: #eeeeee 2px outset;
+BACKGROUND-COLOR: #D4D0C8;
+}
+
+/* ЯЧЕЙКА ТАБЛИЦЫ */
+.lf_tr {
+BORDER-RIGHT:  #aaaaaa 1px solid;
+BORDER-TOP:    #eeeeee 1px solid;
+BORDER-LEFT:   #eeeeee 1px solid;
+BORDER-BOTTOM: #aaaaaa 1px solid;
+font: 75% Tahoma;
+}
+
+/* ФОРМА ВВОДА */
+.lf_input {
+BORDER-RIGHT:  #ffffff 1px solid;
+BORDER-TOP:    #999999 1px solid;
+BORDER-LEFT:   #999999 1px solid;
+BORDER-BOTTOM: #ffffff 1px solid;
+BACKGROUND-COLOR: #e4e0d8;
+font: 9pt Tahoma;
+width: 100%;
+}
+
+/* ПОЛЕ FILE */
+.lf_file {
+BORDER-RIGHT:  #ffffff 1px outset;
+BORDER-TOP:    #ffffff 1px outset;
+BORDER-LEFT:   #ffffff 1px outset;
+BORDER-BOTTOM: #ffffff 1px outset;
+BACKGROUND-COLOR: #e4e0d8;
+font: 9pt Tahoma;
+width: 100%;
+}
+
+
+/* КНОПКА "SUBMIT" */
+.lf_submit {
+BORDER-RIGHT:  buttonhighlight 2px outset;
+BORDER-TOP:    buttonhighlight 2px outset; 
+BORDER-LEFT:   buttonhighlight 2px outset;
+BORDER-BOTTOM: buttonhighlight 2px outset;
+BACKGROUND-COLOR: #e4e0d8;
+width: 30%;
+}
+
+--></STYLE>";s:11:"description";a:22:{s:4:"type";s:8:"textarea";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:1:"5";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:17:"Краткое описание:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"info";a:22:{s:4:"type";s:8:"textarea";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:2:"10";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:16:"Полное описание:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:4:"icon";a:22:{s:4:"type";s:5:"image";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:21:"Изображение (иконка):";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"upload1";a:22:{s:4:"type";s:4:"file";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:7:"lf_file";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:51:"Загрузить файл иконки (рекомендуемая ширина 100 px)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"picture";a:22:{s:4:"type";s:5:"image";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:16:"Полная картинка:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"upload2";a:22:{s:4:"type";s:4:"file";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"0";s:6:"public";s:1:"1";s:4:"save";s:1:"0";s:5:"style";s:0:"";s:5:"class";s:7:"lf_file";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:62:"Загрузить файл картинки (рекомендуемая ширина не более 300 px)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:7:"visible";a:22:{s:4:"type";s:8:"checkbox";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:32:"Категория доступна для просмотра";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:26:"Доступность для просмотра:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:12:"show_special";a:22:{s:4:"type";s:8:"checkbox";s:4:"need";s:1:"1";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:32:"Показывать как спец. предложение";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:24:"Специальное предложение:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:5:"price";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:38:"Цена:<br>используется для типа магазин";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:9:"old_price";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:2:"11";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:47:"Старая цена:<br>используется для типа магазин
+";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:8:"href_url";a:22:{s:4:"type";s:4:"text";s:4:"need";s:1:"0";s:7:"default";s:0:"";s:5:"value";s:0:"";s:7:"textval";s:0:"";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:1:"1";s:7:"sizemax";s:3:"100";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:8:"lf_input";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:91:"Cсылка (URL):<br>используется для типа категорий файловый архив (партнеры / обмен ссылками)";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}s:10:"defaultico";a:22:{s:4:"type";s:8:"checkbox";s:4:"need";s:1:"0";s:7:"default";s:1:"1";s:5:"value";s:0:"";s:7:"textval";s:32:"Использовать иконку по умолчанию";s:4:"cols";s:0:"";s:4:"rows";s:0:"";s:7:"sizemin";s:0:"";s:7:"sizemax";s:0:"";s:5:"check";s:0:"";s:6:"check=";s:0:"";s:4:"trim";s:1:"1";s:6:"public";s:1:"1";s:4:"save";s:1:"1";s:5:"style";s:0:"";s:5:"class";s:0:"";s:4:"html";s:0:"";s:5:"html1";s:0:"";s:5:"html2";s:0:"";s:7:"textreg";s:33:"Использовать иконку по умолчанию:";s:7:"texterr";s:0:"";s:8:"textinfo";s:0:"";}}
