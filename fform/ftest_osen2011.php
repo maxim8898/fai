@@ -24,7 +24,8 @@ if (isset($form[email]) && $red == 0){
   }
 }
 
-$ip = getRealIpAddr(); session_register("ip");
+$ip = getRealIpAddr();
+$_SESSION['ip'] = $ip;
 
 
 if ( isset($form[cod]) && $_SESSION[cod] <> md5($form[cod])){

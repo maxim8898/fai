@@ -62,7 +62,7 @@ if (!isset($save_voting_results)) { //форма опроса
 	}
 	$out .= "</table>";
 	$vote_completed[0] = 1;
-	session_register("vote_completed");
+	$_SESSION['vote_completed'] = $vote_completed;
 }
 $out .= "</Td></Tr></Table>";
 ?>

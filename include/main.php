@@ -86,8 +86,8 @@ if (isset($error)){
 	if (!isset($vote_completed[$PID]) && $mark)
 	$q = mysql_query("UPDATE ok_products SET rating=(rating*votes+$mark)/(votes+1), votes=votes+1 WHERE PID=$PID");
 	$vote_completed[$PID] = 1;
-	session_register("vote_completed");
-      }
+	$_SESSION['vote_completed'] = $vote_completed;
+			}
       include_once("prodview.php");
     }
 

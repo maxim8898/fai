@@ -1,7 +1,8 @@
 <?php
 error_reporting(0);
 session_start();
-$ip = getRealIpAddr(); session_register("ip");
+$ip = getRealIpAddr();
+$_SESSION['ip'] = $ip;
 
 if ( isset($form[cod]) && $_SESSION[cod] <> md5($form[cod])){
   $error[cod][] = 'Ошибочный код подтверждения';
