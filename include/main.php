@@ -1,4 +1,4 @@
-<?
+<?php
 //echo"CID=$CID PID=$PID";
 if (isset($error)){
   include_once("config/error.php");

@@ -1,4 +1,4 @@
-<?
+<?php
 $out = ""; $f='';
 $fn = 'minichat.txt';
 if (file_exists($fn)){

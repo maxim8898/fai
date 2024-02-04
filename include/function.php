@@ -1,4 +1,4 @@
-<?
+<?php
 $out .= "подключен файл function.php";
 
 function getRealIpAddr()

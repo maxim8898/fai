@@ -1,4 +1,4 @@
-<?
+<?php
 error_reporting(0);
 session_start();
 $ip = getRealIpAddr(); session_register("ip");

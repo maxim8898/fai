@@ -1,4 +1,4 @@
-<?
+<?php
 $tmp = isset($searchstring) ? $searchstring : "";
 $out = "
 <form action='index.php' method=get>

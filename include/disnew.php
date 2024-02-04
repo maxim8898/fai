@@ -23,7 +23,7 @@ function confirmDelete(text,url)
 
 
 
-<?
+<?php
 if (isset($login)){
 include_once("include/check.php");
 $out .="

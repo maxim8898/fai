@@ -1,4 +1,4 @@
-<?
+<?php
 $out = "";
 $out .= "<Table width=100%>\n<Tr><Td>";
 if (!isset($save_voting_results)) { //форма опроса

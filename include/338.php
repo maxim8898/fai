@@ -1,4 +1,4 @@
-<?
+<?php
 $phptxt .="<TABLE width=100% border=0 cellpadding=3 cellspacing=1 bgcolor=000000><tr bgcolor=#9cb4ca> <td>Фамилия</td> <td>Имя</td> <td>Страна</td> <td>Город</td> <td>Разряд</td> <td>Комплекс</td> <td>Модель</td> <td>Двигатель</td> <td>Передатчик</td> <td>Канал</td> </tr>";
 
 $res=mysql_query("SELECT * FROM test_osen2011 ORDER BY datereg");

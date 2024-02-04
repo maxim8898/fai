@@ -1,4 +1,4 @@
-<?
+<?php
 $out =""; $out1 =""; $tip = 0; $showrating=0;
 $descriptions=""; $keywords=""; $title="";
 if (!isset($PID) || $PID==0){ $PID=0;}

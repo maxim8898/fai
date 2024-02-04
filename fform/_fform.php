@@ -1,4 +1,4 @@
-<?
+<?php
 //extract($_POST); extract($_GET);
    if (!defined('loginform')) exit("Константа loginform не определена, не правильный вызов программы. <P> <b>phpLoginForm</b> - <a href=http://php.spb.ru/phpLoginForm/>http://php.spb.ru/phpLoginForm/</a>");
 

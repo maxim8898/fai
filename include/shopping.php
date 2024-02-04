@@ -1,4 +1,4 @@
-<?
+<?php
 $shopping = 1; $out=''; $out2='';
 if (isset($login) && $shopping){
 	$out = implode("",file("templ/shopping.tpl"));

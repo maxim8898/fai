@@ -1,4 +1,4 @@
-<?
+<?php
 error_reporting(0);
 session_start();
 $login = $_SESSION['login'];
@@ -8,8 +8,8 @@ $nick = $_SESSION['nick'];
 extract($_POST); extract($_GET);
 
 include_once("../config/connect.php"); include_once("../config/config.php");
-//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Ошибка подключения к MySQL"); mysql_select_db(DB_NAME) or die("Ошибка подключения к БД");	
-@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("Сервис временно недоступен"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("Сервис временно недоступен");
+//mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ MySQL"); mysql_select_db(DB_NAME) or die("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ");	
+@mysql_connect(DB_HOST,DB_USER,DB_PASS) or die("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"); @mysql_query("SET NAMES 'cp1251'"); @mysql_select_db(DB_NAME) or die("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 include_once("../include/checkadmin.php");
 
 
@@ -29,10 +29,10 @@ if (isset($Cedit)){
     include_once("../fform/fcateg.php");
     ?>
 	<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor="#dee7ef">
-	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">Редактирование разделов и категорий</FONT></TD></TR>
-	    <TR><TD align="left"><? echo $buf; ?></TD></TR>
+	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</FONT></TD></TR>
+	    <TR><TD align="left"><?php echo $buf; ?></TD></TR>
 	</TABLE>
-    <?
+    <?php
   }	
 } else if (isset($Pedit)){
   if (isset($del)){
@@ -47,10 +47,10 @@ if (isset($Cedit)){
     include_once("../fform/fprod.php");
     ?>
 	<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor="#dee7ef">
-	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">Редактирование продукта/материала/статьи/</FONT></TD></TR>
-	    <TR><TD align="left"><? echo $buf; ?></TD></TR>
+	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ/</FONT></TD></TR>
+	    <TR><TD align="left"><?php echo $buf; ?></TD></TR>
 	</TABLE>
-    <?
+    <?php
   }	
 
 }else {
@@ -65,9 +65,9 @@ if (!isset($CID)){
 }
 
 $r=mysql_query("SELECT tip, parent, pnum, CID, name, sort FROM ok_categories WHERE tip<>3 and (parent='$CID' or parent= '$parent' or parent=0) order by parent, pnum");
-$out .="<tr bgcolor=$middle_color><td class=lf_tr></td><td class=lf_tr align=center><b>Список категорий</b></td><td class=lf_tr></td></tr>";
+$out .="<tr bgcolor=$middle_color><td class=lf_tr></td><td class=lf_tr align=center><b>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</b></td><td class=lf_tr></td></tr>";
 while($Row=mysql_fetch_assoc($r)) {
-  $out .= "<tr><td class=lf_tr width=16><a href = acateg.php?CID=$Row[CID]&Cedit=1><img src='../img/b_edit.png' alt='Изменить' border=0></a></td><td class=lf_tr>";
+  $out .= "<tr><td class=lf_tr width=16><a href = acateg.php?CID=$Row[CID]&Cedit=1><img src='../img/b_edit.png' alt='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' border=0></a></td><td class=lf_tr>";
   if ($CID == $Row[CID]){
 	$out .="<img src='../img/cur.gif' width='14' height='13'><a href=acateg.php?CID=$Row[CID]> $Row[name]</a>";
 	if ($Row[sort] == 1) $order="ORDER by date"; else if ($Row[sort] == 2) $order="ORDER by rating DESC"; else if ($Row[sort] == 4) $order="ORDER by name";else $order="ORDER by pnum";
@@ -76,17 +76,17 @@ while($Row=mysql_fetch_assoc($r)) {
   }else { //if ($Row[parent]==$parent){
 	$out .="&nbsp;&nbsp;<img src='../img/cur2.gif' width='8' height='9'><a href=acateg.php?CID=$Row[CID]> $Row[name]</a>";
   }
-  $out .= "</td><td class=lf_tr width=16><a href=\"javascript:confirmDelete('Удалить категорию?','acateg.php?CID=$Row[CID]&Cedit=1&del=1');\"><img src='../img/b_drop.png' alt='Удалить' border=0></a></td></tr>";
+  $out .= "</td><td class=lf_tr width=16><a href=\"javascript:confirmDelete('пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?','acateg.php?CID=$Row[CID]&Cedit=1&del=1');\"><img src='../img/b_drop.png' alt='пїЅпїЅпїЅпїЅпїЅпїЅпїЅ' border=0></a></td></tr>";
 }
 $out .="</table>";
-$out .= "<br><center><a href = acateg.php?New=1&Cedit=1>Добавить категорию</a></center>";
+$out .= "<br><center><a href = acateg.php?New=1&Cedit=1>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></center>";
 
 
 $r=mysql_query("SELECT PID, CID, name, visible, pnum, price FROM ok_products where CID='$CID' $order");
 $count = mysql_num_rows($r);
 if ($count>0){
 	$out1 .="<table border=0 cellpadding=3 cellspacing=0 width=100% bgcolor=eaeaea>"; 
-	$out1 .="<tr bgcolor=$middle_color><td class=lf_tr></td><td class=lf_tr></td><td class=lf_tr align=center><b>Содержание раздела</b></td><td class=lf_tr>№</td><td class=lf_tr>Цена</td><td class=lf_tr align=center>img</td><td class=lf_tr align=center>ico</td><td class=lf_tr></td></tr>";
+	$out1 .="<tr bgcolor=$middle_color><td class=lf_tr></td><td class=lf_tr></td><td class=lf_tr align=center><b>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</b></td><td class=lf_tr>пїЅ</td><td class=lf_tr>пїЅпїЅпїЅпїЅ</td><td class=lf_tr align=center>img</td><td class=lf_tr align=center>ico</td><td class=lf_tr></td></tr>";
 	while($Row=mysql_fetch_array($r)) {
 
 		$icon="../pictures/i_$Row[PID].gif";
@@ -97,20 +97,20 @@ if ($count>0){
 
 		$newvisible = $Row[visible]+1; if($newvisible >1) $newvisible = 0; else $newvisible=1;
 		$out1 .="<tr>
-		<td class=lf_tr width=12><INPUT type='checkbox' name='chvisible' "; if ($Row[visible]) $out1.=" checked title='Видимый'"; $out1 .=" title='Не видимый' onclick=\"JumpURL('acateg?CID=$CID&PID=$Row[PID]&visible=$newvisible');\"></td>
-		<td class=lf_tr width=16><a href = acateg.php?CID=$Row[CID]&PID=$Row[PID]&Pedit=1><img src='../img/b_edit.png' alt='Изменить' border=0></a></td>
+		<td class=lf_tr width=12><INPUT type='checkbox' name='chvisible' "; if ($Row[visible]) $out1.=" checked title='пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'"; $out1 .=" title='пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ' onclick=\"JumpURL('acateg?CID=$CID&PID=$Row[PID]&visible=$newvisible');\"></td>
+		<td class=lf_tr width=16><a href = acateg.php?CID=$Row[CID]&PID=$Row[PID]&Pedit=1><img src='../img/b_edit.png' alt='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' border=0></a></td>
 		<td class=lf_tr>$Row[name]</td>
 		<td class=lf_tr>$Row[pnum]</td>
 		<td class=lf_tr>$Row[price]</td>
 		<td class=lf_tr align=center>$img</td>
 		<td class=lf_tr align=center>$icon</td>
-		<td class=lf_tr width=16><a href=\"javascript:confirmDelete('Удалить содержимое?','acateg.php?PID=$Row[PID]&Pedit=1&del=1&CID=$CID');\"><img src='../img/b_drop.png' alt='Удалить' border=0></a></td></tr>";
+		<td class=lf_tr width=16><a href=\"javascript:confirmDelete('пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?','acateg.php?PID=$Row[PID]&Pedit=1&del=1&CID=$CID');\"><img src='../img/b_drop.png' alt='пїЅпїЅпїЅпїЅпїЅпїЅпїЅ' border=0></a></td></tr>";
 	}
 	$out1 .="</table>";
 }else{
-  $out1="В данной категории материалов нет.";
+  $out1="пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ.";
 }
-$out1 .= "<br><center><a href = acateg.php?New=1&Pedit=1&CID=$CID>Добавить материал</a></center>";
+$out1 .= "<br><center><a href = acateg.php?New=1&Pedit=1&CID=$CID>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></center>";
 
 ?>
 <html>
@@ -139,26 +139,26 @@ function confirmDelete(text,url)
 
 <body bgcolor=#eaeaea>
 <p style='margin-top:4.0pt'> </p>
-<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <? echo "$light_color"; ?>>
+<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <?php echo "$light_color"; ?>>
     <TR>
-      <TD colspan="2" align="center" background="../img/but_f.gif">Настройка разделов и категорий ...</TD>
+      <TD colspan="2" align="center" background="../img/but_f.gif">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ...</TD>
     </TR>
     <TR>
       <TD valign="top" width="30%">
-	<? echo "$out"; ?>
+	<?php echo "$out"; ?>
       </TD>
       <TD valign="top">
-	<? echo "$out1"; ?>
+	<?php echo "$out1"; ?>
       </TD> 
     </TR>
 </TABLE>
 <center>
-<a href="admin.php">Меню администратора</a>
-<a href="../index.php?CID=<? echo $CID;?>">Переход к сайту</a>
+<a href="admin.php">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
+<a href="../index.php?CID=<?php echo $CID;?>">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ</a>
 </center>
 </body>
 
 </html>
-<?
+<?php
 }
 ?>

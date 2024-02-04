@@ -1,4 +1,4 @@
-<?
+<?php
 $out ="";
 
 $out .="<img src='../img/cur1.gif' width='8' height='9'><a href=index.php onClick=parent.left.location.reload('left.php')> Главная</a><br>";

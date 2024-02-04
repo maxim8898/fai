@@ -1,4 +1,4 @@
-<?
+<?php
 if (!isset($login)) exit(header("Location: ../index.php?error=1"));
 if (isset($Cancel)){
   exit(header("Location: index.php?FID=$CID"));

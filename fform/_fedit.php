@@ -1,4 +1,4 @@
-<?
+<?php
    if (!defined('loginformedit')) exit("Константа loginformedit не определена, не правильный вызов программы. <P> <b>phpLoginForm</b> - <a href=http://php.spb.ru/phpLoginForm/>http://php.spb.ru/phpLoginForm/</a>");
    error_reporting(2047);
    @define('loginform',1);
@@ -197,7 +197,7 @@ BACKGROUND-COLOR: #e4e0d8;
 width: 30%;
 }
 </STYLE>
-<?
+<?php
 
    echo $lf['name'];
 

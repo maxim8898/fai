@@ -1,4 +1,4 @@
-<?
+<?php
 if (isset($Cancel)){
   exit(header("Location: index.php"));
 }

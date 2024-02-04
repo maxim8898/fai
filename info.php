@@ -1,4 +1,4 @@
-<?
+<?php
 function  geo_info($ip)
   {
     $xml = "<ipquery><fields><city/></fields><ip-list>"

@@ -1,4 +1,4 @@
-<?
+<?php
 //	include_once("shopping.php");
 //	$output = str_replace("{SHOPPING}", $out, $output);
 //	$output = str_replace("{CARTS}", $out2, $output);

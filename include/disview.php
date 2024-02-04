@@ -1,4 +1,4 @@
-<?
+<?php
 $out ="";  $out1 = ''; $var='PID';
 $descriptions=""; $keywords=""; $title="";
 if (!isset($PID)){ $PID=$DID; $forum=1; $var='DID';} else {$dop="&PID=$PID";}

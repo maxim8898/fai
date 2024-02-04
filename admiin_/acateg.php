@@ -1,4 +1,4 @@
-<?
+<?php
 error_reporting(0);
 session_start();
 $login = $_SESSION['login'];
@@ -30,9 +30,9 @@ if (isset($Cedit)){
     ?>
 	<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor="#dee7ef">
 	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">Редактирование разделов и категорий</FONT></TD></TR>
-	    <TR><TD align="left"><? echo $buf; ?></TD></TR>
+	    <TR><TD align="left"><?php echo $buf; ?></TD></TR>
 	</TABLE>
-    <?
+    <?php
   }
 } else if (isset($Pedit)){
   if (isset($del)){
@@ -48,9 +48,9 @@ if (isset($Cedit)){
     ?>
 	<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor="#dee7ef">
 	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">Редактирование продукта/материала/статьи/</FONT></TD></TR>
-	    <TR><TD align="left"><? echo $buf; ?></TD></TR>
+	    <TR><TD align="left"><?php echo $buf; ?></TD></TR>
 	</TABLE>
-    <?
+    <?php
   }
 
 }else {
@@ -141,26 +141,26 @@ function confirmDelete(text,url)
 
 <body bgcolor=#eaeaea>
 <p style='margin-top:4.0pt'> </p>
-<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <? echo "$light_color"; ?>>
+<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <?php echo "$light_color"; ?>>
     <TR>
       <TD colspan="2" align="center" background="../img/but_f.gif">Настройка разделов и категорий ...</TD>
     </TR>
     <TR>
       <TD valign="top" width="30%">
-	<? echo "$out"; ?>
+	<?php echo "$out"; ?>
       </TD>
       <TD valign="top">
-	<? echo "$out1"; ?>
+	<?php echo "$out1"; ?>
       </TD>
     </TR>
 </TABLE>
 <center>
 <a href="admin.php">Меню администратора</a>
-<a href="../index.php?CID=<? echo $CID;?>">Переход к сайту</a>
+<a href="../index.php?CID=<?php echo $CID;?>">Переход к сайту</a>
 </center>
 </body>
 
 </html>
-<?
+<?php
 }
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 include("../include/checkadmin.php");
 if (isset($Cancel)){
   exit(header("Location: acateg.php?CID=$form[CID]"));

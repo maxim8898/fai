@@ -1,4 +1,4 @@
-<?
+<?php
 if (isset($searchstring) && $searchstring <>''){
 	$search = explode(" ",$searchstring);
 	//поиск в категориях

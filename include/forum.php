@@ -1,4 +1,4 @@
-<?
+<?php
 $out =""; $out1 =""; $i =0;
 $descriptions=""; $keywords=""; $title="";
 $out1 ="<b> Список форумов ";

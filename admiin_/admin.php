@@ -1,4 +1,4 @@
-<?
+<?php
 error_reporting(0);
 session_start();
 $login = $_SESSION['login'];
@@ -23,7 +23,7 @@ include_once("../include/checkadmin.php");
 
 <body bgcolor=#EEEEEE>
 <p style='margin-top:4.0pt'> </p>
-<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <? echo "$light_color"; ?>>
+<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <?php echo "$light_color"; ?>>
     <TR>
       <TD colspan="2" align="center" background="../img/but_f.gif"><font size=-1><b>Общие настройки</b></font></TD>
     </TR>
@@ -75,7 +75,7 @@ include_once("../include/checkadmin.php");
           </tr>
 	 <tr>
             <td align=center><img src="../img/paper.gif" border=0></td>
-            <td><a class=standard href="admin.php?path=news"><u><?=ADMIN_NEWS;?></u></a>
+            <td><a class=standard href="admin.php?path=news"><u><?phpphp echo ADMIN_NEWS;?></u></a>
             </td>
           </tr>
 
@@ -87,12 +87,12 @@ include_once("../include/checkadmin.php");
 
           <tr>
             <td align=center><img src="../img/paper.gif" border=0></td>
-            <td><a class=standard href="admin.php?path=ext&page=ext1"><u><?=ADMIN_ABOUT_PAGE;?></u></a>
+            <td><a class=standard href="admin.php?path=ext&page=ext1"><u><?php echo ADMIN_ABOUT_PAGE;?></u></a>
             </td>
           </tr>
  <tr>
             <td align=center><img src="../img/paper.gif" border=0></td>
-            <td><a class=standard href="admin.php?path=ext&page=ext2"><u><?=ADMIN_SHIPPING_PAGE;?></u></a>
+            <td><a class=standard href="admin.php?path=ext&page=ext2"><u><?php echo ADMIN_SHIPPING_PAGE;?></u></a>
             </td>
           </tr>
         </table>

@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 error_reporting(0);
 $login = $_SESSION['login'];
@@ -29,9 +29,9 @@ if (isset($Nedit)){
     ?>
 	<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor="#dee7ef">
 	    <TR><TD height="23" background="../img/but_f.gif" align="center"><FONT size="-1">Редактирование новостей (анонсов)</FONT></TD></TR>
-	    <TR><TD align="left"><? echo $buf; ?></TD></TR>
+	    <TR><TD align="left"><?php echo $buf; ?></TD></TR>
 	</TABLE>
-    <?
+    <?php
   }
 }else {
 
@@ -90,23 +90,23 @@ function confirmDelete(text,url)
 
 <body bgcolor=#eaeaea>
 <p style='margin-top:4.0pt'> </p>
-<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <? echo "$light_color"; ?>>
+<TABLE border="1" width="100%" cellpadding="2" cellspacing="3" bgcolor= <?php echo "$light_color"; ?>>
     <TR>
       <TD align="center" background="../img/but_f.gif">Настройка новостей (анонсов)</TD>
     </TR>
     <TR>
       <TD valign="top">
-	<? echo "$out"; ?>
+	<?php echo "$out"; ?>
       </TD>
     </TR>
 </TABLE>
 <center>
 <a href="admin.php">Меню администратора</a>
-<a href="../index.php?CID=<? echo $CID;?>">Переход к сайту</a>
+<a href="../index.php?CID=<?php echo $CID;?>">Переход к сайту</a>
 </center>
 </body>
 
 </html>
-<?
+<?php
 }
 ?>

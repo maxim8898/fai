@@ -1,4 +1,4 @@
-<?
+<?php
 $ii =0;
  $i =0; $tip=0; $showrating=1; $order="ORDER by pnum";
 if (!isset($CID) || $CID==0){ $CID=0; $parent = 0;$order="ORDER by pnum";}
@@ -87,7 +87,7 @@ if ($count<=1){
 }
 
 if ($g_count > 0){
-if ($nav){ $title1 .="<b>"; showNavigator($g_count, $offset, $max, "index.php?CID=$CID&",&$title1);}
+if ($nav){ $title1 .="<b>"; showNavigator($g_count, $offset, $max, "index.php?CID=$CID&",$title1);}
 $out .="<TABLE border='0' width='100%' cellpadding='3' cellspacing='0' bgcolor='$main_color'>";
 
 

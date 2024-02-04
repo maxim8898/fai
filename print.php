@@ -1,4 +1,4 @@
-<?
+<?php
 error_reporting(0);
 // Управление главной панелью
 session_start();

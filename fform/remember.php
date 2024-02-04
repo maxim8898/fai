@@ -1,4 +1,4 @@
-<?
+<?php
 
 define("loginform",1); include_once("_fform.php");
 $buf=loginform_show("fform/_remember.lf"); //ВНИМАНИЕ: ТУТ НУЖНО УКАЗАТЬ ИМЯ ФОРМЫ

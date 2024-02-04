@@ -1,4 +1,4 @@
-<?
+<?php
 include("../include/check.php");
 if (isset($Cancel)){
   exit(header("Location: anews.php"));
